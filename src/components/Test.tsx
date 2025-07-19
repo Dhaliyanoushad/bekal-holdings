@@ -79,7 +79,7 @@ export default function HeroCarousel() {
               <h1 className="text-4xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight">
                 Bekal International Holding Company
               </h1>
-              <p className="text-lg sm:text-xl mb-8 text-white/90">
+              <p className="text-sm sm:text-xl mb-8 text-white/90">
                 Since 1981, we have shaped industries across the UAE, Saudi
                 Arabia, and India by building a world-class, diversified
                 portfolio grounded in integrity, innovation, and excellence.

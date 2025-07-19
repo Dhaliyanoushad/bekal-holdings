@@ -5,10 +5,10 @@ const MissionSection = () => (
     {/* Left Text */}
     <div className="flex-1 flex items-center justify-center px-8 py-16">
       <div className="max-w-md">
-        <h2 className="text-5xl font-extrabold  text-[#1c2653] mb-4 tracking-wide leading-tight">
+        <h2 className="text-4xl font-extrabold  text-[#1c2653] mb-4 tracking-wide leading-tight">
           About Us
         </h2>{" "}
-        <p className="text-xl text-[#424242] max-w-2xl leading-relaxed font-medium">
+        <p className="text-l text-[#424242] max-w-2xl leading-relaxed font-medium">
           Founded in 1981, Bekal International Holding Company has grown into a
           multi-faceted conglomerate, delivering innovative solutions across a
           range of industries while maintaining a commitment to quality,

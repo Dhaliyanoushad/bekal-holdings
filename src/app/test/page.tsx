@@ -18,7 +18,7 @@ export default function Home() {
       <Navbar />
       <HeroCarousel />
       {/* <NewsletterSignup /> */}
-      <Hero />
+      {/* <Hero /> */}
       <AboutUs />
       <Commitment />
       {/* <About /> */}
