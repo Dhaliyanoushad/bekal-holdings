@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 const Hero = () => (
   <section
     id="home"
-    className="pt-20 pb-20 bg-gradient-to-r from-[#f1e9db] to-[#faf6ee] text-white"
+    className="pt-20 pb-20 bg-gradient-to-r from-[#f1e9db] to-[#faf6ee] text-[#004237]"
   >
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="py-16 text-center">

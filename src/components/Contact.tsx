@@ -15,12 +15,26 @@ const Contact = () => (
           <div className="space-y-4">
             <div className="flex items-center">
               <Phone className="text-blue-700 mr-4" />
-              <p className="text-gray-700">0501105765</p>
+              <a
+                href="tel:0501105765"
+                className="text-gray-700 hover:text-blue-900"
+              >
+                0501105765
+              </a>
             </div>
+
             <div className="flex items-center">
               <Mail className="text-blue-700 mr-4" />
-              <p className="text-gray-700">info@bekalholding.com</p>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bekalholding.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 hover:text-blue-900"
+              >
+                info@bekalholding.com
+              </a>
             </div>
+
             <div className="flex items-center">
               <MapPin className="text-blue-700 mr-4" />
               <p className="text-gray-700">UAE, Saudi Arabia, India</p>

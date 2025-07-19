@@ -36,11 +36,14 @@ const Board = () => {
                   <p className="mb-4">
                     Usman K., the visionary founder and chairman of Bekal
                     International Holding Company, has been the driving force
-                    behind the company's growth and diversification since its
+                    behind the company’s growth and diversification since its
                     inception in 1981. With over four decades of entrepreneurial
                     expertise, he has transformed Bekal from a modest business
                     venture into a multi-industry conglomerate operating across
                     Saudi Arabia (KSA), United Arab Emirates (UAE), and India.
+                    His leadership is rooted in integrity, innovation, and a
+                    relentless pursuit of excellence, values that continue to
+                    guide the company today
                   </p>
                   <p className="mb-4">
                     A pioneer in business diversification, Usman K. recognized
@@ -49,12 +52,38 @@ const Board = () => {
                     encompass a broad portfolio including hospitality,
                     construction, MEP works, interiors and fit-outs, IT
                     solutions, sports services, facility management, and more.
+                    His ability to identify emerging market trends and
+                    capitalize on new opportunities has been instrumental in
+                    Bekal’s sustained growth and cross-border success.
                   </p>
-                  <p>
+                  <p className="mb-4">
+                    Usman K.’s strategic vision has also led to the
+                    establishment of iconic brands under the Bekal umbrella,
+                    including Bekal Restaurant, Bekal Events & Catering, and
+                    Bekal Baker’s, which have become synonymous with quality and
+                    innovation. His commitment to culinary excellence and
+                    customer satisfaction has positioned Bekal as a leader in
+                    the hospitality sector, offering a diverse range of fine
+                    dining, fast food, and event catering experiences.
+                  </p>
+                  <p className="mb-4">
+                    Beyond hospitality, his forward-thinking approach extends to
+                    the sports industry, where Bekal Sports & Services supplies
+                    premium sports equipment and specializes in the design and
+                    setup of golf courses, tennis courts, and padel courts.
+                    Under his stewardship, the company is preparing to launch
+                    state-of-the-art factory facilities to enhance production
+                    capabilities and meet the evolving market dynamics of the
+                    UAE and Saudi Arabia
+                  </p>
+                  <p className="mb-4">
                     With a focus on legacy and sustainability, Usman K. remains
                     dedicated to mentoring the next generation of leaders while
                     ensuring Bekal continues to be a trailblazer in new sectors
-                    and investment opportunities.
+                    and investment opportunities. His unwavering commitment to
+                    building a global conglomerate reflects his passion,
+                    perseverance, and entrepreneurial spirit, ensuring Bekal
+                    International Holding thrives for generations to come.
                   </p>
                 </div>
               )}
