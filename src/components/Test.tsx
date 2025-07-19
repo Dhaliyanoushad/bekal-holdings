@@ -66,65 +66,52 @@ export default function HeroCarousel() {
           }`}
           aria-hidden={i !== active}
         >
-          {slide.type === "image" ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src={slide.src}
-              alt={`Slide ${i + 1}`}
-              className="object-cover w-full h-full"
-            />
-          ) : (
-            <video
-              src={slide.src}
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="object-cover w-full h-full"
-            />
-          )}
+          <img
+            src={slide.src}
+            alt={`Slide ${i + 1}`}
+            className="object-cover w-full h-full"
+          />
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/80" />
           {/* Slide content */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="py-16 text-center">
-                <h1 className="text-4xl font-bold mb-4">
-                  Bekal International Holding Company
-                </h1>
-                <p className="text-xl mb-8 max-w-3xl mx-auto">
-                  A leading diversified business group with operations across
-                  Kingdom of Saudi Arabia, United Arab Emirates, and India since
-                  1981.
-                </p>
-                <div className="flex justify-center space-x-4">
-                  <a
-                    href="#companies"
-                    className="bg-white text-blue-900 px-6 py-3 rounded-md font-medium hover:bg-blue-50 transition duration-300 flex items-center"
-                  >
-                    Our Companies <ArrowRight size={16} className="ml-2" />
-                  </a>
-                  <a
-                    href="#contact"
-                    className="border border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-blue-900 transition duration-300"
-                  >
-                    Contact Us
-                  </a>
+          <div className="absolute inset-0 flex items-center justify-center text-center px-6 sm:px-12 lg:px-24">
+            <div className="max-w-4xl w-full mx-auto text-white">
+              <h1 className="text-4xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight">
+                Bekal International Holding Company
+              </h1>
+              <p className="text-lg sm:text-xl mb-8 text-white/90">
+                Since 1981, we have shaped industries across the UAE, Saudi
+                Arabia, and India by building a world-class, diversified
+                portfolio grounded in integrity, innovation, and excellence.
+              </p>
+
+              <div className="flex flex-col sm:flex-row justify-center gap-6 mt-4">
+                <div className="bg-white/10 border border-white/20 p-4 rounded-lg min-w-[140px]">
+                  <p className="text-3xl font-bold text-white">400+</p>
+                  <p className="text-sm text-white">Clients</p>
                 </div>
-                <div className="mt-8 flex justify-center space-x-4">
-                  <div className="bg-blue-100 rounded-full px-6 py-3">
-                    <span className="font-bold text-3xl">400+</span>
-                    <p className="text-sm">Clients</p>
-                  </div>
-                  <div className="bg-blue-100 rounded-full px-6 py-3">
-                    <span className="font-bold text-3xl">80+</span>
-                    <p className="text-sm">Team Members</p>
-                  </div>
-                  <div className="bg-blue-100 rounded-full px-6 py-3">
-                    <span className="font-bold text-3xl">3</span>
-                    <p className="text-sm">Countries</p>
-                  </div>
+                <div className="bg-white/10 border border-white/20 p-4 rounded-lg min-w-[140px]">
+                  <p className="text-3xl font-bold text-white">80+</p>
+                  <p className="text-sm text-white">Team Members</p>
                 </div>
+                <div className="bg-white/10 border border-white/20 p-4 rounded-lg min-w-[140px]">
+                  <p className="text-3xl font-bold text-white">3</p>
+                  <p className="text-sm text-white">Countries</p>
+                </div>
+              </div>
+              <div className="flex flex-wrap items-center justify-center gap-5 my-8">
+                <a
+                  href="#companies"
+                  className="bg-white text-blue-900 px-6 py-3 rounded-md font-semibold hover:bg-blue-100 transition duration-300 shadow"
+                >
+                  Explore Companies
+                </a>
+                {/* <a
+                  href="#contact"
+                  className="border border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-blue-900 transition duration-300"
+                >
+                  Contact Us
+                </a> */}
               </div>
             </div>
           </div>
