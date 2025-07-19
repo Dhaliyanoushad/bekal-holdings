@@ -69,7 +69,7 @@ export default function HeroCarousel() {
         <div
           key={i}
           className={`absolute inset-0 transition-opacity duration-1000 ${
-            i === active ? "opacity-100 z-10" : "opacity-0 z-0"
+            i === active ? "opacity-100 z-9" : "opacity-0 z-0"
           }`}
           aria-hidden={i !== active}
         >
