@@ -1,6 +1,11 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Questrial } from "next/font/google";
+const questrial = Questrial({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={questrial.className}>{children}</body>
     </html>
   );
 }

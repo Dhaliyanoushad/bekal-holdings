@@ -29,15 +29,15 @@ const Hero = () => (
           </a>
         </div>
         <div className="mt-8 flex justify-center space-x-4">
-          <div className="bg-blue-800 rounded-full px-6 py-3">
+          <div className="bg-blue-100 rounded-full px-6 py-3">
             <span className="font-bold text-3xl">400+</span>
             <p className="text-sm">Clients</p>
           </div>
-          <div className="bg-blue-800 rounded-full px-6 py-3">
+          <div className="bg-blue-100 rounded-full px-6 py-3">
             <span className="font-bold text-3xl">80+</span>
             <p className="text-sm">Team Members</p>
           </div>
-          <div className="bg-blue-800 rounded-full px-6 py-3">
+          <div className="bg-blue-100 rounded-full px-6 py-3">
             <span className="font-bold text-3xl">3</span>
             <p className="text-sm">Countries</p>
           </div>

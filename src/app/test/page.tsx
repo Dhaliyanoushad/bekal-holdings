@@ -8,12 +8,14 @@ import Contact from "@/components/Contact";
 import Careers from "@/components/Careers";
 import Footer from "@/components/Footer";
 import HeroCarousel from "@/components/Test";
+// import NewsletterSignup from "@/components/NewsletterSignup";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <HeroCarousel />
+      {/* <NewsletterSignup /> */}
       <Hero />
       <About />
       <Companies />
