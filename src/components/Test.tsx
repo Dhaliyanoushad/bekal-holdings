@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 interface HeroSlide {
   type: "image" | "video";
@@ -16,27 +16,20 @@ interface HeroSlide {
 const slides: HeroSlide[] = [
   {
     type: "image",
-    src: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Farabcenterdc.org%2Fwp-content%2Fuploads%2F2023%2F07%2FSaudi-UAE-rivalry-MBS-MBZ-768x432.jpg&f=1&nofb=1&ipt=4436ae0b414e6f87c8ddfd39553416001b28ab8e49118e9ec8db762c1ae3d15b", // Replace with your image path
+    src: "/images/1.jpg",
     headline:
       "We have a world-class, diversified portfolio through investments in attractive, long-term opportunities",
     button: { label: "Our Investments", link: "/investments" },
   },
   {
-    type: "video",
-    src: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Farabcenterdc.org%2Fwp-content%2Fuploads%2F2023%2F07%2FSaudi-UAE-rivalry-MBS-MBZ-768x432.jpg&f=1&nofb=1&ipt=4436ae0b414e6f87c8ddfd39553416001b28ab8e49118e9ec8db762c1ae3d15b", // Replace with your image path
-    headline:
-      "Transforming landscapes with sustainable and innovative projects",
-    button: { label: "Learn More", link: "/about" },
-  },
-  {
     type: "image",
-    src: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Farabcenterdc.org%2Fwp-content%2Fuploads%2F2023%2F07%2FSaudi-UAE-rivalry-MBS-MBZ-768x432.jpg&f=1&nofb=1&ipt=4436ae0b414e6f87c8ddfd39553416001b28ab8e49118e9ec8db762c1ae3d15b", // Replace with your image path
+    src: "/images/2.jpg",
     headline: "Partnering for growth in key industries worldwide",
     button: { label: "Our Partners", link: "/partners" },
   },
   {
     type: "image",
-    src: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Farabcenterdc.org%2Fwp-content%2Fuploads%2F2023%2F07%2FSaudi-UAE-rivalry-MBS-MBZ-768x432.jpg&f=1&nofb=1&ipt=4436ae0b414e6f87c8ddfd39553416001b28ab8e49118e9ec8db762c1ae3d15b", // Replace with your image path
+    src: "/images/3.jpg",
     headline: "Empowering communities with responsible investments",
     button: { label: "Our Impact", link: "/impact" },
   },
@@ -58,13 +51,13 @@ export default function HeroCarousel() {
     };
   }, []);
 
-  const goToSlide = (idx: number) => setActive(idx);
-  const goNext = () => setActive((prev) => (prev + 1) % slides.length);
-  const goPrev = () =>
-    setActive((prev) => (prev - 1 + slides.length) % slides.length);
+  // const goToSlide = (idx: number) => setActive(idx);
+  // const goNext = () => setActive((prev) => (prev + 1) % slides.length);
+  // const goPrev = () =>
+  //   setActive((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
-    <section className="relative h-[90vh] w-full overflow-hidden">
+    <section className="relative h-[100vh] w-full overflow-hidden">
       {slides.map((slide, i) => (
         <div
           key={i}
@@ -91,26 +84,55 @@ export default function HeroCarousel() {
             />
           )}
           {/* Overlay */}
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-black/80" />
           {/* Slide content */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-            <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold max-w-3xl mx-auto drop-shadow-lg">
-              {slide.headline}
-            </h2>
-            {slide.button && (
-              <a
-                href={slide.button.link}
-                className="mt-8 px-6 py-4 bg-white/90 rounded-full font-medium text-gray-900 hover:bg-white shadow-lg transition"
-              >
-                {slide.button.label}
-              </a>
-            )}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="py-16 text-center">
+                <h1 className="text-4xl font-bold mb-4">
+                  Bekal International Holding Company
+                </h1>
+                <p className="text-xl mb-8 max-w-3xl mx-auto">
+                  A leading diversified business group with operations across
+                  Kingdom of Saudi Arabia, United Arab Emirates, and India since
+                  1981.
+                </p>
+                <div className="flex justify-center space-x-4">
+                  <a
+                    href="#companies"
+                    className="bg-white text-blue-900 px-6 py-3 rounded-md font-medium hover:bg-blue-50 transition duration-300 flex items-center"
+                  >
+                    Our Companies <ArrowRight size={16} className="ml-2" />
+                  </a>
+                  <a
+                    href="#contact"
+                    className="border border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-blue-900 transition duration-300"
+                  >
+                    Contact Us
+                  </a>
+                </div>
+                <div className="mt-8 flex justify-center space-x-4">
+                  <div className="bg-blue-100 rounded-full px-6 py-3">
+                    <span className="font-bold text-3xl">400+</span>
+                    <p className="text-sm">Clients</p>
+                  </div>
+                  <div className="bg-blue-100 rounded-full px-6 py-3">
+                    <span className="font-bold text-3xl">80+</span>
+                    <p className="text-sm">Team Members</p>
+                  </div>
+                  <div className="bg-blue-100 rounded-full px-6 py-3">
+                    <span className="font-bold text-3xl">3</span>
+                    <p className="text-sm">Countries</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       ))}
 
       {/* Navigation arrows */}
-      <button
+      {/* <button
         aria-label="Previous Slide"
         onClick={goPrev}
         className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white/100 p-2 rounded-full shadow transition hidden sm:inline-flex"
@@ -123,10 +145,10 @@ export default function HeroCarousel() {
         className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white/100 p-2 rounded-full shadow transition hidden sm:inline-flex"
       >
         <ChevronRight size={32} className="text-gray-700" />
-      </button>
+      </button> */}
 
       {/* Dots */}
-      <div className="absolute bottom-8 w-full flex justify-center gap-3 z-20">
+      {/* <div className="absolute bottom-8 w-full flex justify-center gap-3 z-20">
         {slides.map((_, idx) => (
           <button
             key={idx}
@@ -137,7 +159,7 @@ export default function HeroCarousel() {
             onClick={() => goToSlide(idx)}
           />
         ))}
-      </div>
+      </div> */}
     </section>
   );
 }
