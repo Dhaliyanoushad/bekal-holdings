@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 const Hero = () => (
   <section
     id="home"
-    className="pt-20 pb-20 bg-gradient-to-r from-[#f1e9db] to-[#faf6ee] text-[#004237]"
+    className="pt-20 pb-20 bg-gradient-to-r from-[#f1e9db] to-[#faf6ee] text-[#14213D]"
   >
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="py-16 text-center">
@@ -29,15 +29,15 @@ const Hero = () => (
           </a>
         </div>
         <div className="mt-8 flex justify-center space-x-4">
-          <div className="bg-blue-800 rounded-full px-6 py-3">
+          <div className="bg-blue-100 rounded-full px-6 py-3">
             <span className="font-bold text-3xl">400+</span>
             <p className="text-sm">Clients</p>
           </div>
-          <div className="bg-blue-800 rounded-full px-6 py-3">
+          <div className="bg-blue-100 rounded-full px-6 py-3">
             <span className="font-bold text-3xl">80+</span>
             <p className="text-sm">Team Members</p>
           </div>
-          <div className="bg-blue-800 rounded-full px-6 py-3">
+          <div className="bg-blue-100 rounded-full px-6 py-3">
             <span className="font-bold text-3xl">3</span>
             <p className="text-sm">Countries</p>
           </div>

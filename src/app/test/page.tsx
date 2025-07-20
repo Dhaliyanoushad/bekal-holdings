@@ -8,14 +8,20 @@ import Contact from "@/components/Contact";
 import Careers from "@/components/Careers";
 import Footer from "@/components/Footer";
 import HeroCarousel from "@/components/Test";
+import Commitment from "@/components/Commitment";
+import AboutUs from "@/components/AboutUs";
+// import NewsletterSignup from "@/components/NewsletterSignup";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <HeroCarousel />
-      <Hero />
-      <About />
+      {/* <NewsletterSignup /> */}
+      {/* <Hero /> */}
+      <AboutUs />
+      <Commitment />
+      {/* <About /> */}
       <Companies />
       <Values />
       <Board />

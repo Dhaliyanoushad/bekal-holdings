@@ -1,3 +1,5 @@
+import React from "react";
+
 const companies = [
   {
     title: "Bekal Restaurant",
@@ -25,7 +27,7 @@ const companies = [
   },
   {
     title: "Bekal Sports & Services",
-    desc: "Managing sports industry operations, including the supply of sports equipment to MNCs and the setup of golf courses, tennis courts, and padel courts.",
+    desc: "Managing sports industry operations, including the supply of sports equipment and the setup of golf, tennis, and padel courts.",
   },
   {
     title: "Bekal Facility Management",
@@ -33,33 +35,48 @@ const companies = [
   },
   {
     title: "Fresh Bites Restaurant",
-    desc: "A vibrant dining brand located in Dubai, offering a modern culinary experience with a focus on fresh ingredients and exceptional flavors.",
+    desc: "A vibrant dining brand from Dubai, offering fresh, exciting dishes with a modern culinary experience.",
   },
 ];
 
 const Companies = () => (
-  <section id="companies" className="py-16 bg-gray-100">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-blue-900 mb-2">Our Companies</h2>
-        <div className="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
-        <p className="text-lg text-gray-600">
+  <section
+    id="companies"
+    className="py-24 bg-gradient-to-br from-[#f9f6ee] to-[#f2ebe3]  text-[#19181e]"
+  >
+    <div className="max-w-7xl mx-auto px-4 sm:px-8">
+      {/* Header */}
+      <div className="flex flex-col items-center mb-16">
+        <h2 className="text-4xl md:text-5xl font-black text-[#312752] tracking-tight mb-4">
+          Our Companies
+        </h2>
+        <div className="w-28 h-[3px] bg-gradient-to-r from-[#e6c678] to-[#ba9972] rounded-full mb-5" />
+        <p className="text-lg text-[#69605d] max-w-2xl text-center leading-7">
           Our extensive portfolio reflects our ability to adapt to market
-          dynamics and meet the evolving needs of our clients.
+          dynamics and meet the evolving needs of our clients in the
+          fast-changing economies of the UAE and Saudi Arabia. Companies under
+          Bekal International Holding include:
         </p>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {companies.map((c) => (
+      {/* Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+        {companies.map((company, idx) => (
           <div
-            key={c.title}
-            className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
+            key={company.title}
+            className="relative overflow-hidden rounded-2xl shadow-[0_12px_36px_-12px_rgba(44,38,68,0.13)] border border-[#ece3d9] bg-white/90 transition transform hover:-translate-y-2 hover:shadow-[0_16px_48px_-8px_rgba(186,153,114,0.25)] group"
           >
-            <div className="h-4 bg-blue-700"></div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold text-blue-900 mb-2">
-                {c.title}
+            {/* Decorative gold bar accent */}
+            <div className="absolute left-0 top-0 w-1.5 h-20 bg-gradient-to-b from-[#e6c678] to-[#dec49a] rounded-br-xl group-hover:from-[#ba9972] transition" />
+            <div className="p-8 pl-9 h-full flex flex-col">
+              <h3 className="text-2xl font-bold mb-2 text-[#312752]">
+                {company.title}
               </h3>
-              <p className="text-gray-600">{c.desc}</p>
+              <p className="text-[#554D46] text-base leading-relaxed tracking-wide">
+                {company.desc}
+              </p>
+              <span className="mt-auto pt-6 block text-[#bf9631] text-xs tracking-widest font-semibold">
+                {String(idx + 1).padStart(2, "0")}
+              </span>
             </div>
           </div>
         ))}
@@ -67,4 +84,5 @@ const Companies = () => (
     </div>
   </section>
 );
+
 export default Companies;
