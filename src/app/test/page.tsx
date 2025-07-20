@@ -20,9 +20,9 @@ export default function Home() {
       {/* <NewsletterSignup /> */}
       {/* <Hero /> */}
       <AboutUs />
+      <Companies />
       <Commitment />
       {/* <About /> */}
-      <Companies />
       <Values />
       <Board />
       <Contact />
