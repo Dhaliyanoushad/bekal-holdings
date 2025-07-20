@@ -7,9 +7,10 @@ import Board from "@/components/Board";
 import Contact from "@/components/Contact";
 import Careers from "@/components/Careers";
 import Footer from "@/components/Footer";
-import HeroCarousel from "@/components/Test";
+import HeroCarousel from "@/components/HeroCarousel";
 import Commitment from "@/components/Commitment";
 import AboutUs from "@/components/AboutUs";
+import Test from "@/components/Test";
 // import NewsletterSignup from "@/components/NewsletterSignup";
 
 export default function Home() {
@@ -17,17 +18,17 @@ export default function Home() {
     <>
       <Navbar />
       <HeroCarousel />
-      {/* <NewsletterSignup /> */}
-      {/* <Hero /> */}
       <AboutUs />
       <Companies />
       <Commitment />
-      {/* <About /> */}
       <Values />
       <Board />
+      {/* <Test /> */}
       <Contact />
       <Careers />
       <Footer />
+      {/* <NewsletterSignup /> */}
+      {/* <About /> */}
     </>
   );
 }
