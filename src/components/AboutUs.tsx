@@ -1,7 +1,10 @@
 import React from "react";
 
 const MissionSection = () => (
-  <section className="w-full min-h-[320px] bg-[#faf7ec] flex flex-col lg:flex-row">
+  <section
+    className="w-full min-h-[320px] bg-[#faf7ec] flex flex-col lg:flex-row"
+    id="about"
+  >
     {/* Left Text */}
     <div className="flex-1 flex items-center justify-center px-8 py-16">
       <div className="max-w-md">
