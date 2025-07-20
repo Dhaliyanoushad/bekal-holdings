@@ -1,46 +1,52 @@
 import React from "react";
 
-const Commitment = () => {
-  return (
-    <section
-      className="relative bg-gradient-to-br from-[#e8ded1] to-[#f8f5f0] py-24 overflow-hidden"
-      id="commitment"
-    >
-      {/* Decorative top corner accents */}
-      <div className="absolute left-0 top-0 w-64 h-64 bg-[#d5c095]/30 rounded-br-[6rem] z-0" />
-      <div className="absolute right-0 bottom-0 w-72 h-40 bg-[#fff6de]/70 rounded-tl-full z-0" />
-
-      <div className="relative z-10 max-w-4xl mx-auto px-6 sm:px-10 text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-[#44452c] mb-4">
-          Commitment to{" "}
-          <span className="text-[#b49c62]">Innovation &amp; Growth</span>
-        </h2>
-
-        <p className="text-lg md:text-xl mb-6 mt-4 leading-loose text-[#594f3c] ">
+const MissionSection = () => (
+  <section
+    className="w-full min-h-[320px] bg-[#d7c581] flex flex-col lg:flex-row-reverse"
+    id="about"
+  >
+    {/* Left Text */}
+    <div className="flex-1 flex items-center justify-center px-8 py-16">
+      <div className="max-w-md">
+        <h2 className="text-3xl font-extrabold  text-[#1c2653] mb-4 tracking-wide leading-tight">
+          Commitment to
+          <span className="text-amber-700 font-serif"> Innovation </span> and
+          <span className="text-amber-700 font-serif"> Growth </span>
+        </h2>{" "}
+        <p className="text-base text-[#424242] max-w-2xl leading-relaxed font-medium mb-3">
           As a forward-thinking conglomerate, we are constantly evolving to meet
-          the changing demands of the market. Our vision aligns with the dynamic
-          economies of the UAE and Kingdom of Saudi Arabia, driving capacity
-          expansion and supply chain efficiency through new factory facilities.
+          the changing demands of the market. Our vision is to align with the
+          market dynamics of the UAE and Kingdom of Saudi Arabia, and we are
+          expanding our capabilities through upcoming factory facilities to
+          support increased production capacity and supply chain efficiency.
         </p>
-        <p className="text-lg md:text-xl mb-6 leading-loose text-[#594f3c] ">
-          At{" "}
-          <span className="font-semibold text-[#887648]">
-            Bekal International Holding
-          </span>
-          , we focus on lasting partnerships and delivering superior solutions.
-          Our diverse portfolio and cross-sector expertise position us as a
-          trusted leader, while operational excellence and innovation set
-          benchmarks for quality and service.
+        <p className="text-base text-[#424242] max-w-2xl leading-relaxed font-medium mb-3">
+          At Bekal International Holding, we believe in building enduring
+          partnerships and delivering superior solutions. Our diversified
+          portfolio and cross-sector expertise position us as a trusted leader
+          across industries, and our commitment to operational excellence drives
+          us to innovate, expand, and set new benchmarks for quality and
+          service.
         </p>
-        <p className="text-lg md:text-xl leading-loose text-[#594f3c] ">
-          As we grow, we continue exploring new opportunities, entering emerging
-          sectors, and building reputed brands. Our leadership’s strategic
-          vision keeps Bekal at the cutting edge of market innovation and global
-          expansion.
+        <p className="text-base text-[#424242] max-w-2xl leading-relaxed font-medium mb-3">
+          As we continue to grow, we remain dedicated to exploring new
+          investment opportunities, expanding into emerging sectors, and
+          building reputed brands under the Bekal name. Our leadership team’s
+          strategic vision ensures that Bekal International Holding remains at
+          the forefront of market innovation and global business expansion.
         </p>
       </div>
-    </section>
-  );
-};
+    </div>
+    {/* Right Image */}
+    <div className="flex-1 min-h-[260px]">
+      <img
+        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.britannica.com%2F14%2F189714-050-0A674D18%2FKingdom-Centre-Riyadh-Saudi-Arabia.jpg&f=1&nofb=1&ipt=94a4c1c731aa6ffaeb97b4ee736e8e01ca214770fbf233cada03394988db569e"
+        alt="Saudi Landscape"
+        className="w-full h-full object-cover rounded-r-2xl"
+        style={{ minHeight: 260 }}
+      />
+    </div>
+  </section>
+);
 
-export default Commitment;
+export default MissionSection;
