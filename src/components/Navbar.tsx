@@ -77,7 +77,7 @@ const Navbar = () => {
         </motion.div>
 
         {/* Desktop Menu - Changed to color transitions only */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden min-[976px]:flex items-center space-x-8">
           {links.map((link) => (
             <a
               key={link.label}
@@ -93,7 +93,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Trigger */}
-        <motion.div whileTap={{ scale: 0.95 }} className="md:hidden">
+        <motion.div whileTap={{ scale: 0.95 }} className="min-[976px]:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-soft-beige hover:text-primary-orange transition-colors p-1"
@@ -115,7 +115,7 @@ const Navbar = () => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-deep-navy overflow-hidden"
+            className="min-[976px]:hidden bg-deep-navy overflow-hidden"
           >
             <div className="px-4 pb-6 pt-2 border-t border-charcoal-blue/30">
               {links.map((link, index) => (
