@@ -2,7 +2,7 @@ import React from "react";
 
 const MissionSection = () => (
   <section
-    className="w-full min-h-[320px] bg-[#ecdba0] flex flex-col lg:flex-row"
+    className="w-full min-h-[320px] bg-[#f0e8db] flex flex-col lg:flex-row"
     id="about"
   >
     {/* Left Text */}
@@ -33,7 +33,7 @@ const MissionSection = () => (
       <img
         src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.britannica.com%2F14%2F189714-050-0A674D18%2FKingdom-Centre-Riyadh-Saudi-Arabia.jpg&f=1&nofb=1&ipt=94a4c1c731aa6ffaeb97b4ee736e8e01ca214770fbf233cada03394988db569e"
         alt="Saudi Landscape"
-        className="w-full h-full object-cover rounded-bl-2xl"
+        className="w-full h-full object-cover"
         style={{ minHeight: 260 }}
       />
     </div>

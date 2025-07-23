@@ -2,7 +2,7 @@ import React from "react";
 
 const MissionSection = () => (
   <section
-    className="w-full min-h-[320px] bg-[#d7c581] flex flex-col lg:flex-row-reverse"
+    className="w-full min-h-[320px] bg-[#f0e8db] flex flex-col lg:flex-row-reverse"
     id="about"
   >
     {/* Left Text */}
@@ -10,8 +10,8 @@ const MissionSection = () => (
       <div className="max-w-md">
         <h2 className="text-3xl font-extrabold  text-[#1c2653] mb-4 tracking-wide leading-tight">
           Commitment to
-          <span className="text-amber-700 font-serif"> Innovation </span> and
-          <span className="text-amber-700 font-serif"> Growth </span>
+          <span className="text-[#c2410c] "> Innovation </span> and
+          <span className="text-[#c2410c] "> Growth </span>
         </h2>{" "}
         <p className="text-base text-[#424242] max-w-2xl leading-relaxed font-medium mb-3">
           As a forward-thinking conglomerate, we are constantly evolving to meet
@@ -42,7 +42,7 @@ const MissionSection = () => (
       <img
         src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.britannica.com%2F14%2F189714-050-0A674D18%2FKingdom-Centre-Riyadh-Saudi-Arabia.jpg&f=1&nofb=1&ipt=94a4c1c731aa6ffaeb97b4ee736e8e01ca214770fbf233cada03394988db569e"
         alt="Saudi Landscape"
-        className="w-full h-full object-cover rounded-r-2xl"
+        className="w-full h-full object-cover"
         style={{ minHeight: 260 }}
       />
     </div>

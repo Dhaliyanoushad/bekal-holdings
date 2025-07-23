@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export function Contact() {
+export function NewsletterSignup() {
   const [loading, setLoading] = useState(false);
   const [successMsg, setSuccessMsg] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
@@ -16,7 +16,7 @@ export function Contact() {
     const target = e.currentTarget;
     const formData = {
       access_key: "7d14eed3-9054-4dd2-81ee-8c4963a49e4e", // ✅ your Web3Forms access key
-      name: target.name.value,
+      name: target.name.valueOf,
       email: target.email.value,
       message: target.message.value,
     };

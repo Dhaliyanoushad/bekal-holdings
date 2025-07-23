@@ -68,7 +68,7 @@ export default function HeroCarousel() {
               <div className="flex flex-wrap items-center justify-center gap-5 my-8">
                 <a
                   href="#companies"
-                  className="bg-white text-blue-900 px-6 py-3 rounded-md font-semibold hover:bg-blue-100 transition duration-300 shadow"
+                  className="bg-white text-[#181b22] px-6 py-3 rounded-md font-semibold hover:bg-[#f0e8db] transition duration-300 shadow"
                 >
                   Explore Companies
                 </a>

@@ -40,14 +40,14 @@ const companies = [
 ];
 
 const Companies = () => (
-  <section id="companies" className="py-24 bg-[#f8f6ef] relative">
+  <section id="companies" className="py-24 bg-[#27292e] relative">
     <div className="max-w-7xl mx-auto px-4 sm:px-8">
       <div className="text-center mb-16">
-        <h2 className="text-5xl font-extrabold text-[#1a213a] mb-4 tracking-tight">
+        <h2 className="text-5xl font-extrabold text-[#fdfaf5] mb-4 tracking-tight">
           Our Portfolio Companies
         </h2>
-        <div className="w-20 h-1 bg-[#baa35b] mx-auto mb-8 rounded-full" />
-        <p className="text-lg text-[#807868] max-w-2xl mx-auto leading-relaxed">
+        <div className="w-20 h-1 bg-[#ea580c] mx-auto mb-8 rounded-full" />
+        <p className="text-lg text-[#f0e8db] max-w-2xl mx-auto leading-relaxed">
           Our extensive portfolio reflects our ability to adapt to market
           dynamics and meet the evolving needs of our clients in the
           fast-changing economies of the UAE and Saudi Arabia. Companies under
@@ -61,20 +61,20 @@ const Companies = () => (
             className="flex flex-col justify-between h-full px-2"
           >
             <div className="flex flex-col gap-3">
-              <span className="text-[#baa35b] text-base font-bold tracking-widest uppercase mb-2">
+              <span className="text-[#ea580c] text-base font-bold tracking-widest uppercase mb-2">
                 {String(idx + 1).padStart(2, "0")}
               </span>
-              <h3 className="text-xl md:text-2xl font-semibold text-[#23304d] mb-2">
+              <h3 className="text-xl md:text-2xl font-semibold text-[#fdfaf5] mb-2">
                 {company.title}
               </h3>
-              <p className="text-base text-[#57534b] font-medium leading-relaxed">
+              <p className="text-base text-[#f0e8db] font-medium leading-relaxed">
                 {company.desc}
               </p>
             </div>
           </div>
         ))}
       </div>
-      <div className="w-28 h-1 bg-[#baa35b]/50 rounded-full mt-20 mx-auto" />
+      <div className="w-28 h-1 bg-[#ea580c] rounded-full mt-20 mx-auto" />
     </div>
   </section>
 );

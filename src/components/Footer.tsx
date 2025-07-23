@@ -22,14 +22,14 @@ const Footer = () => (
             >
               <Linkedin className="text-[#cbb778] w-6 h-6" />
             </a>
-            <a
+            {/* <a
               href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
               className="w-11 h-11 flex items-center justify-center rounded-full bg-white/10 hover:bg-[#cbb778]/20 border border-[#1d223a] shadow transition"
             >
               <Instagram className="text-[#cbb778] w-6 h-6" />
-            </a>
+            </a> */}
           </div>
         </div>
         {/* Quick Links */}

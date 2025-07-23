@@ -67,25 +67,25 @@ const Board = () => {
     setActiveAccordion(activeAccordion === idx ? null : idx);
 
   return (
-    <section id="board" className="py-20 bg-[#f6f7fa]">
+    <section id="board" className="py-20 bg-[#f0e8db]">
       <div className="max-w-5xl mx-auto px-4 sm:px-8">
         <div className="text-center mb-14">
-          <h2 className="text-4xl font-bold text-[#18314f] mb-2 tracking-tight">
+          <h2 className="text-4xl font-bold text-[#181b22] mb-2 tracking-tight">
             Board of Directors
           </h2>
-          <div className="w-20 h-1 bg-[#d5b86b] mx-auto mb-8 rounded-full" />
+          <div className="w-20 h-1 bg-[#ea580c] mx-auto mb-8 rounded-full" />
         </div>
         <div className="space-y-8">
           {boardMembers.map((member, i) => (
             <div
               key={member.name}
-              className="bg-white/90 p-8 rounded-2xl shadow hover:shadow-lg border border-[#ece5d5] transition-all"
+              className="bg-[#fdfaf5] p-8 rounded-2xl shadow hover:shadow-lg border border-[#ece5d5] transition-all"
             >
               <div
                 onClick={() => toggleAccordion(i)}
                 className="flex justify-between items-center cursor-pointer select-none"
               >
-                <h3 className="text-2xl font-bold text-[#18314f]">
+                <h3 className="text-2xl font-bold text-[#27292e]">
                   {`${member.name} – ${member.title}`}
                 </h3>
                 {activeAccordion === i ? <ChevronUp /> : <ChevronDown />}
@@ -100,7 +100,7 @@ const Board = () => {
                     variants={accordionVariants}
                     style={{ overflow: "hidden" }}
                   >
-                    <div className="mt-5 text-[#414249] space-y-4">
+                    <div className="mt-5 text-[#424242] space-y-4">
                       {member.bio.map((para, idx) => (
                         <p key={idx} className="leading-relaxed text-base">
                           {para}
