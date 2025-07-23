@@ -6,9 +6,9 @@ const MissionSection = () => (
     id="about"
   >
     {/* Left Text */}
-    <div className="flex-1 flex items-center justify-center px-8 py-16 text-center md:text-left">
+    <div className="flex-1 flex items-center justify-center px-8 py-16 text-balance">
       <div className="max-w-md">
-        <h2 className="text-heading font-bold  text-deep-navy mb-4 tracking-wide leading-tight">
+        <h2 className="text-heading-sm sm:text-heading font-bold  text-deep-navy mb-4 tracking-wide leading-tight">
           Commitment to
           <span className="text-secondary-orange  "> Innovation </span> and
           <span className="text-secondary-orange "> Growth </span>

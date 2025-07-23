@@ -67,10 +67,10 @@ const Board = () => {
     setActiveAccordion(activeAccordion === idx ? null : idx);
 
   return (
-    <section id="board" className="py-20 bg-cream-beige">
+    <section id="board" className="py-14 md:py-20 bg-cream-beige">
       <div className="max-w-5xl mx-auto px-4 sm:px-8">
         <div className="text-center mb-14">
-          <h2 className="text-heading font-bold text-deep-navy mb-2 tracking-tight">
+          <h2 className="text-heading-sm sm:text-heading font-bold text-deep-navy mb-2 tracking-tight">
             Board of Directors
           </h2>
           <div className="w-20 h-1 bg-primary-orange mx-auto mb-8 rounded-full" />
@@ -85,7 +85,7 @@ const Board = () => {
                 onClick={() => toggleAccordion(i)}
                 className="flex justify-between items-center cursor-pointer select-none"
               >
-                <h3 className="text-subheading font-bold text-charcoal-blue">
+                <h3 className="text-body xs:text-xl sm:text-subheading font-bold text-charcoal-blue">
                   {`${member.name} – ${member.title}`}
                 </h3>
                 {activeAccordion === i ? (

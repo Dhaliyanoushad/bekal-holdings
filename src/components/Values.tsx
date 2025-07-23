@@ -2,10 +2,10 @@ import React from "react";
 
 const Values = () => {
   return (
-    <section id="values" className="py-20 bg-charcoal-blue">
+    <section id="values" className="py-16 sm:py-20 bg-charcoal-blue">
       <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20">
         <div className="text-center mb-16">
-          <h2 className="text-heading font-bold text-cream-beige tracking-wide">
+          <h2 className="text-heading-sm sm:text-heading font-bold text-cream-beige tracking-wide">
             Core Values
           </h2>
           <div className="w-16 h-1 mx-auto bg-primary-orange mt-4" />
@@ -69,10 +69,12 @@ const Values = () => {
               <div className="w-14 h-14 mx-auto flex items-center justify-center rounded-full border-2 border-primary-orange text-primary-orange text-xl font-bold mb-4">
                 {index + 1}
               </div>
-              <h4 className="text-body font-semibold mb-2 text-deep-navy">
+              <h4 className="sm:text-body font-semibold mb-2 text-deep-navy">
                 {item.title}
               </h4>
-              <p className="text-dark-gray text-description">{item.desc}</p>
+              <p className="text-dark-gray text-small sm:text-description">
+                {item.desc}
+              </p>
             </div>
           ))}
         </div>

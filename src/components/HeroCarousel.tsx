@@ -43,7 +43,7 @@ export default function HeroCarousel() {
           <div className="absolute inset-0 bg-black/80" />
           <div className="absolute inset-0 flex items-center justify-center text-center px-6 sm:px-12 lg:px-24">
             <div className="max-w-4xl w-full m-auto text-white">
-              <h1 className="text-3xl xs:text-3xl min-[692px]:text-heading min-[976px]:text-5xl font-bold mb-4 leading-tight mt-20">
+              <h1 className="text-3xl min-[500px]:text-heading min-[976px]:text-5xl font-bold mb-4 leading-tight mt-20">
                 Bekal International Holding Company
               </h1>
               <p className="text-small min-[692px]:text-description min-[976px]:text-xl xs:mb-8 text-white/90">

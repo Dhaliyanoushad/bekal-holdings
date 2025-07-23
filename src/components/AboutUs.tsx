@@ -8,10 +8,10 @@ const MissionSection = () => (
     {/* Left Text */}
     <div className="flex-1 flex items-center justify-center px-8 py-16">
       <div className="max-w-md">
-        <h2 className="text-heading font-bold text-deep-navy mb-4 tracking-wide leading-tight">
+        <h2 className="text-heading-sm sm:text-heading font-bold text-deep-navy mb-4 tracking-wide leading-tight">
           About Us
         </h2>
-        <p className="text-description text-dark-gray max-w-2xl leading-relaxed font-medium">
+        <p className="text-small sm:text-description text-dark-gray max-w-2xl leading-relaxed font-medium">
           Founded in 1981, Bekal International Holding Company is a leading
           diversified business group with operations across Kingdom of Saudi
           Arabia, United Arab Emirates, and India. With a legacy spanning over

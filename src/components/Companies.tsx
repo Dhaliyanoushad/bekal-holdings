@@ -43,11 +43,11 @@ const Companies = () => (
   <section id="companies" className="py-20 bg-charcoal-blue relative">
     <div className="max-w-7xl mx-auto px-4 sm:px-8">
       <div className="text-center mb-16">
-        <h2 className="text-heading font-bold text-off-white mb-4 tracking-tight">
+        <h2 className="text-heading-sm sm:text-heading font-bold text-off-white mb-4 tracking-tight">
           Our Portfolio Companies
         </h2>
         <div className="w-20 h-1 bg-primary-orange mx-auto mb-8 rounded-full" />
-        <p className="text-body text-cream-beige max-w-2xl mx-auto leading-relaxed">
+        <p className="text-description sm:text-body text-cream-beige max-w-2xl mx-auto leading-relaxed">
           Our extensive portfolio reflects our ability to adapt to market
           dynamics and meet the evolving needs of our clients in the
           fast-changing economies of the UAE and Saudi Arabia. Companies under
@@ -60,7 +60,7 @@ const Companies = () => (
             key={company.title}
             className="flex flex-col justify-between h-full px-2"
           >
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-0 sm:gap-3">
               <span className="text-primary-orange text-description font-bold tracking-widest uppercase mb-2">
                 {String(idx + 1).padStart(2, "0")}
               </span>
