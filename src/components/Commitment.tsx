@@ -40,7 +40,7 @@ const MissionSection = () => (
     {/* Right Image */}
     <div className="flex-1 min-h-[260px]">
       <img
-        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.britannica.com%2F14%2F189714-050-0A674D18%2FKingdom-Centre-Riyadh-Saudi-Arabia.jpg&f=1&nofb=1&ipt=94a4c1c731aa6ffaeb97b4ee736e8e01ca214770fbf233cada03394988db569e"
+        src="/images/6.jpg"
         alt="Saudi Landscape"
         className="w-full h-full object-cover"
         style={{ minHeight: 260 }}

@@ -7,9 +7,9 @@ interface HeroSlide {
 }
 
 const slides: HeroSlide[] = [
-  { src: "/images/1.jpg" },
-  { src: "/images/2.jpg" },
   { src: "/images/3.jpg" },
+  { src: "/images/2.jpg" },
+  { src: "/images/5.jpeg" },
 ];
 
 export default function HeroCarousel() {
@@ -26,7 +26,7 @@ export default function HeroCarousel() {
   }, []);
 
   return (
-    <section className="relative h-[100vh] w-full overflow-hidden">
+    <section className="relative h-[100vh] w-full overflow-hidden" id="home">
       {slides.map((slide, i) => (
         <div
           key={i}
