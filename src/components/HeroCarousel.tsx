@@ -43,15 +43,15 @@ export default function HeroCarousel() {
           <div className="absolute inset-0 bg-black/80" />
           <div className="absolute inset-0 flex items-center justify-center text-center px-6 sm:px-12 lg:px-24">
             <div className="max-w-4xl w-full m-auto text-white">
-              <h1 className="text-3xl min-[692px]:text-heading min-[976px]:text-5xl font-bold mb-4 leading-tight">
+              <h1 className="text-3xl xs:text-3xl min-[692px]:text-heading min-[976px]:text-5xl font-bold mb-4 leading-tight mt-20">
                 Bekal International Holding Company
               </h1>
-              <p className="text-small min-[692px]:text-description min-[976px]:text-xl mb-8 text-white/90">
+              <p className="text-small min-[692px]:text-description min-[976px]:text-xl xs:mb-8 text-white/90">
                 Since 1981, we have shaped industries across the UAE, Saudi
                 Arabia, and India by building a world-class, diversified
                 portfolio grounded in integrity, innovation, and excellence.
               </p>
-              <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mt-4 ">
+              <div className="flex flex-col xs:flex-row justify-center items-center gap-3 sm:gap-6 mt-4 ">
                 {[
                   { value: "400+", label: "Clients" },
                   { value: "80+", label: "Team Members" },
@@ -59,19 +59,19 @@ export default function HeroCarousel() {
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className="bg-white/10 border border-white/20 p-4 rounded-lg sm:min-w-[140px] min-w-[150px]"
+                    className="bg-white/10 border border-white/20 p-3 sm:p-4 rounded-lg sm:min-w-[140px] min-w-[150px]"
                   >
-                    <p className="text-2xl min-[976px]:text-3xl min-[692px]:text-2xl font-bold text-white">
+                    <p className="xs:text-xl sm:text-2xl min-[976px]:text-3xl min-[692px]:text-2xl font-bold text-white">
                       {item.value}
                     </p>
-                    <p className="text-tiny text-sm text-white">{item.label}</p>
+                    <p className="text-small text-white">{item.label}</p>
                   </div>
                 ))}
               </div>
               <div className="flex flex-wrap items-center justify-center gap-5 my-8">
                 <a
                   href="#companies"
-                  className="bg-white text-deep-navy px-6 py-3 rounded-md font-semibold hover:bg-cream-beige transition duration-300 shadow text-tiny min-[692px]:text-small min-[976px]:text-description"
+                  className="bg-white text-deep-navy px-6 py-3 rounded-md font-semibold hover:bg-cream-beige transition duration-300 shadow text-small min-[976px]:text-description"
                 >
                   Explore Companies
                 </a>

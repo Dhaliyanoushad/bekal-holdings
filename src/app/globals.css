@@ -9,6 +9,8 @@
   --color-dark-gray: #424242;
   --color-off-white: #fdfaf5;
   /* --breakpoint-md: 976px; */
+  --breakpoint-sm: 640px;
+  --breakpoint-xs: 500px;
   --text-heading: 36px;
   --text-subheading: 24px;
   --text-xl: 20px;
