@@ -1,5 +1,6 @@
 "use client";
 
+import type { Variants } from "framer-motion";
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "react-feather";
 import { motion, AnimatePresence } from "framer-motion";
@@ -41,7 +42,8 @@ const boardMembers = [
     ],
   },
 ];
-const accordionVariants = {
+
+const accordionVariants: Variants = {
   open: {
     height: "auto",
     opacity: 1,
@@ -58,13 +60,60 @@ const accordionVariants = {
       opacity: { duration: 0.18 },
     },
   },
-};
+} as Variants;
+
+const AccordionItem = ({
+  member,
+  isActive,
+  onToggle,
+}: {
+  member: (typeof boardMembers)[0];
+  isActive: boolean;
+  onToggle: () => void;
+}) => (
+  <div className="bg-off-white p-8 rounded-2xl shadow hover:shadow-lg border border-cream-beige transition-all">
+    <div
+      onClick={onToggle}
+      className="flex justify-between items-center cursor-pointer select-none"
+    >
+      <h3 className="text-body xs:text-xl sm:text-subheading font-bold text-charcoal-blue">
+        {`${member.name} – ${member.title}`}
+      </h3>
+      {isActive ? (
+        <ChevronUp color="var(--color-dark-gray)" />
+      ) : (
+        <ChevronDown color="var(--color-dark-gray)" />
+      )}
+    </div>
+
+    <AnimatePresence initial={false}>
+      {isActive && (
+        <motion.div
+          key="content"
+          initial="collapsed"
+          animate="open"
+          exit="collapsed"
+          variants={accordionVariants}
+          style={{ overflow: "hidden" }}
+        >
+          <div className="mt-5 text-dark-gray space-y-4">
+            {member.bio.map((para, idx) => (
+              <p key={idx} className="leading-relaxed text-description">
+                {para}
+              </p>
+            ))}
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  </div>
+);
 
 const Board = () => {
-  const [activeAccordion, setActiveAccordion] = useState<number | null>(null);
+  const [activeIdx, setActiveIdx] = useState<number | null>(null);
 
-  const toggleAccordion = (idx: number) =>
-    setActiveAccordion(activeAccordion === idx ? null : idx);
+  const handleToggle = (idx: number) =>
+    setActiveIdx(idx === activeIdx ? null : idx);
 
   return (
     <section id="board" className="py-14 md:py-20 bg-cream-beige scroll-mt-20">
@@ -76,48 +125,13 @@ const Board = () => {
           <div className="w-20 h-1 bg-primary-orange mx-auto mb-8 rounded-full" />
         </div>
         <div className="space-y-8">
-          {boardMembers.map((member, i) => (
-            <div
+          {boardMembers.map((member, idx) => (
+            <AccordionItem
               key={member.name}
-              className="bg-off-white p-8 rounded-2xl shadow hover:shadow-lg border border-cream-beige transition-all"
-            >
-              <div
-                onClick={() => toggleAccordion(i)}
-                className="flex justify-between items-center cursor-pointer select-none"
-              >
-                <h3 className="text-body xs:text-xl sm:text-subheading font-bold text-charcoal-blue">
-                  {`${member.name} – ${member.title}`}
-                </h3>
-                {activeAccordion === i ? (
-                  <ChevronUp color="var(--color-dark-gray)" />
-                ) : (
-                  <ChevronDown color="var(--color-dark-gray)" />
-                )}{" "}
-              </div>
-              <AnimatePresence initial={false}>
-                {activeAccordion === i && (
-                  <motion.div
-                    key="content"
-                    initial="collapsed"
-                    animate="open"
-                    exit="collapsed"
-                    variants={accordionVariants}
-                    style={{ overflow: "hidden" }}
-                  >
-                    <div className="mt-5 text-dark-gray space-y-4">
-                      {member.bio.map((para, idx) => (
-                        <p
-                          key={idx}
-                          className="leading-relaxed text-description"
-                        >
-                          {para}
-                        </p>
-                      ))}
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
+              member={member}
+              isActive={activeIdx === idx}
+              onToggle={() => handleToggle(idx)}
+            />
           ))}
         </div>
       </div>
