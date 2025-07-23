@@ -52,7 +52,9 @@ export function NewsletterSignup() {
         onSubmit={handleSubmit}
         className="space-y-4 max-w-xl mx-auto px-4 py-6 border rounded-md shadow"
       >
-        <h2 className="text-2xl font-bold mb-4 text-center">Contact Us</h2>
+        <h2 className="text-subheading font-bold mb-4 text-center">
+          Contact Us
+        </h2>
 
         {successMsg && (
           <p className="text-green-600 font-medium">{successMsg}</p>

@@ -8,7 +8,7 @@ const About = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-blue-900 mb-2">About Us</h2>
             <div className="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
-            <p className="text-base text-gray-600 max-w-4xl mx-auto">
+            <p className="text-description text-gray-600 max-w-4xl mx-auto">
               Founded in 1981, Bekal International Holding Company has grown
               into a multi-faceted conglomerate, delivering innovative solutions
               across a range of industries while maintaining a commitment to
@@ -16,7 +16,7 @@ const About = () => {
             </p>
           </div>
           <div className="mt-10">
-            <h3 className="text-2xl font-semibold text-blue-900 mb-6 text-center">
+            <h3 className="text-subheading font-semibold text-blue-900 mb-6 text-center">
               Commitment to Innovation and Growth
             </h3>
             <p className="text-gray-700 mb-4">

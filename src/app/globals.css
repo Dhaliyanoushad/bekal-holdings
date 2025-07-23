@@ -8,6 +8,12 @@
   --color-cream-beige: #f0e8db;
   --color-dark-gray: #424242;
   --color-off-white: #fdfaf5;
+  /* --breakpoint-md: 976px; */
+  --text-heading: 36px;
+  --text-subheading: 24px;
+  --text-xl: 20px;
+  --text-body: 18px;
+  --text-description: 16px;
 }
 
 :root {

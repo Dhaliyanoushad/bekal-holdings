@@ -6,10 +6,10 @@ const Footer = () => (
       <div className="flex flex-col md:flex-row md:justify-between gap-12 md:gap-0">
         {/* Brand and Social */}
         <div className="flex-1 min-w-[200px] md:pr-16">
-          <h3 className="text-2xl font-bold mb-5 tracking-wide text-off-white">
+          <h3 className="text-subheading font-bold mb-5 tracking-wide text-off-white">
             Bekal International Holding
           </h3>
-          <p className="mb-6 text-cream-beige/60 font-medium leading-relaxed">
+          <p className="mb-6 text-cream-beige/60 font-medium leading-relaxed text-description">
             A leading diversified business group with operations across Kingdom
             of Saudi Arabia, United Arab Emirates, and India since 1981.
           </p>
@@ -34,7 +34,7 @@ const Footer = () => (
         </div>
         {/* Quick Links */}
         <div className="flex-1 min-w-[140px]">
-          <div className="mb-4 text-base font-semibold tracking-wider text-off-white">
+          <div className="mb-4 text-description font-semibold tracking-wider text-off-white">
             Quick Links
           </div>
           <ul className="space-y-2 font-medium">
@@ -74,7 +74,7 @@ const Footer = () => (
         </div>
         {/* Companies */}
         <div className="flex-1 min-w-[160px]">
-          <div className="mb-4 text-base font-semibold tracking-wider text-off-white">
+          <div className="mb-4 text-description font-semibold tracking-wider text-off-white">
             Our Companies
           </div>
           <ul className="space-y-2 font-medium">
@@ -114,10 +114,10 @@ const Footer = () => (
         </div>
         {/* Contact */}
         <div className="flex-1 min-w-[180px]">
-          <div className="mb-4 text-base font-semibold tracking-wider text-off-white">
+          <div className="mb-4 text-description font-semibold tracking-wider text-off-white">
             Contact
           </div>
-          <ul className="space-y-4 text-cream-beige/80 text-base">
+          <ul className="space-y-4 text-cream-beige/80 text-description">
             <li className="flex items-center gap-2 hover:text-cream-beige transition">
               <Phone size={17} className="text-cream-beige" />
               <a href="tel:0501105765" className="tracking-wide">
@@ -143,11 +143,11 @@ const Footer = () => (
         </div>
       </div>
       <div className="border-t border-charcoal-blue mt-14 pt-8 text-center">
-        <p className="text-off-white/80">
+        <p className="text-off-white/80 text-body">
           &copy; {new Date().getFullYear()} Bekal International Holding. All
           rights reserved.
         </p>
-        <p className="text-sm text-off-white/80 mt-1">
+        <p className="text-description text-off-white/80 mt-1">
           <a
             href="https://www.bekalholding.com"
             className="hover:text-cream-beige transition"

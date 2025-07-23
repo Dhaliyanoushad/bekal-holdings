@@ -70,7 +70,7 @@ const Board = () => {
     <section id="board" className="py-20 bg-cream-beige">
       <div className="max-w-5xl mx-auto px-4 sm:px-8">
         <div className="text-center mb-14">
-          <h2 className="text-4xl font-bold text-deep-navy mb-2 tracking-tight">
+          <h2 className="text-heading font-bold text-deep-navy mb-2 tracking-tight">
             Board of Directors
           </h2>
           <div className="w-20 h-1 bg-primary-orange mx-auto mb-8 rounded-full" />
@@ -85,10 +85,14 @@ const Board = () => {
                 onClick={() => toggleAccordion(i)}
                 className="flex justify-between items-center cursor-pointer select-none"
               >
-                <h3 className="text-2xl font-bold text-charcoal-blue">
+                <h3 className="text-subheading font-bold text-charcoal-blue">
                   {`${member.name} – ${member.title}`}
                 </h3>
-                {activeAccordion === i ? <ChevronUp /> : <ChevronDown />}
+                {activeAccordion === i ? (
+                  <ChevronUp color="var(--color-dark-gray)" />
+                ) : (
+                  <ChevronDown color="var(--color-dark-gray)" />
+                )}{" "}
               </div>
               <AnimatePresence initial={false}>
                 {activeAccordion === i && (
@@ -102,7 +106,10 @@ const Board = () => {
                   >
                     <div className="mt-5 text-dark-gray space-y-4">
                       {member.bio.map((para, idx) => (
-                        <p key={idx} className="leading-relaxed text-base">
+                        <p
+                          key={idx}
+                          className="leading-relaxed text-description"
+                        >
                           {para}
                         </p>
                       ))}

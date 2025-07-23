@@ -26,7 +26,7 @@ export default function HeroCarousel() {
   }, []);
 
   return (
-    <section className="relative h-[100vh] w-full overflow-hidden" id="home">
+    <section className="relative h-[100vh] w-full overflow-hidden " id="home">
       {slides.map((slide, i) => (
         <div
           key={i}
@@ -42,8 +42,8 @@ export default function HeroCarousel() {
           />
           <div className="absolute inset-0 bg-black/80" />
           <div className="absolute inset-0 flex items-center justify-center text-center px-6 sm:px-12 lg:px-24">
-            <div className="max-w-4xl w-full mx-auto text-white">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+            <div className="max-w-4xl w-full m-auto text-white">
+              <h1 className="text-heading md:text-5xl font-bold mb-4 leading-tight">
                 Bekal International Holding Company
               </h1>
               <p className="text-sm sm:text-xl mb-8 text-white/90">
