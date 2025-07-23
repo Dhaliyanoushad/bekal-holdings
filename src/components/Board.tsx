@@ -67,7 +67,7 @@ const Board = () => {
     setActiveAccordion(activeAccordion === idx ? null : idx);
 
   return (
-    <section id="board" className="py-14 md:py-20 bg-cream-beige">
+    <section id="board" className="py-14 md:py-20 bg-cream-beige scroll-mt-20">
       <div className="max-w-5xl mx-auto px-4 sm:px-8">
         <div className="text-center mb-14">
           <h2 className="text-heading-sm sm:text-heading font-bold text-deep-navy mb-2 tracking-tight">

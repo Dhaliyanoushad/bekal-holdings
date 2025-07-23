@@ -1,7 +1,7 @@
 import { Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
 
 const Contact = () => (
-  <section id="contact" className="py-20 bg-charcoal-blue">
+  <section id="contact" className="py-20 bg-charcoal-blue scroll-mt-20">
     <div className="max-w-6xl mx-auto px-4 sm:px-8">
       <div className="text-center mb-16">
         <h2 className="text-heading font-bold tracking-tight text-off-white mb-5">

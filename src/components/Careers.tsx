@@ -1,7 +1,7 @@
 import React from "react";
 
 const Careers = () => (
-  <section id="careers" className="py-12 bg-cream-beige">
+  <section id="careers" className="py-12 bg-cream-beige scroll-mt-20">
     <div className="max-w-4xl mx-auto px-4 sm:px-8 ">
       <div className="text-center mb-16">
         <h2 className="text-heading font-bold tracking-tight text-deep-navy mb-5">

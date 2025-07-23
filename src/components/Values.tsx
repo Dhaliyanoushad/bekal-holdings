@@ -2,7 +2,10 @@ import React from "react";
 
 const Values = () => {
   return (
-    <section id="values" className="py-16 sm:py-20 bg-charcoal-blue">
+    <section
+      id="values"
+      className="py-16 sm:py-20 bg-charcoal-blue scroll-mt-20"
+    >
       <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20">
         <div className="text-center mb-16">
           <h2 className="text-heading-sm sm:text-heading font-bold text-cream-beige tracking-wide">
