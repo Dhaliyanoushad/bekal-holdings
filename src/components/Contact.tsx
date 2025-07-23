@@ -1,14 +1,14 @@
 import { Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
 
 const Contact = () => (
-  <section id="contact" className="py-20 bg-[#27292e]">
+  <section id="contact" className="py-20 bg-charcoal-blue">
     <div className="max-w-6xl mx-auto px-4 sm:px-8">
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-extrabold tracking-tight text-[#fdfaf5] mb-5">
+        <h2 className="text-4xl font-extrabold tracking-tight text-off-white mb-5">
           Contact Us
         </h2>
-        <div className="w-16 h-1 mx-auto rounded-full mb-8 bg-gradient-to-r from-[#ea580c] to-[#ea580c]/40" />
-        <p className="text-lg text-[#f0e8db] max-w-xl mx-auto leading-relaxed">
+        <div className="w-16 h-1 mx-auto rounded-full mb-8 bg-gradient-to-r from-primary-orange to-primary-orange/80" />
+        <p className="text-lg text-cream-beige max-w-xl mx-auto leading-relaxed">
           We value new connections and conversations. Please reach out via your
           preferred channel or use the form for a discreet response from our
           team.
@@ -19,28 +19,28 @@ const Contact = () => (
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-6">
             <div className="flex items-center gap-4">
-              <Phone className="text-[#fdfaf5] w-6 h-6" />
+              <Phone className="text-off-white w-6 h-6" />
               <a
                 href="tel:0501105765"
-                className="text-[#f0e8db] hover:text-[#bfa450] text-base transition font-medium"
+                className="text-off-white hover:text-cream-beige text-base transition font-medium"
               >
                 0501105765
               </a>
             </div>
             <div className="flex items-center gap-4">
-              <Mail className="text-[#fdfaf5] w-6 h-6" />
+              <Mail className="text-off-white w-6 h-6" />
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bekalholding.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#f0e8db] hover:text-[#bfa450] text-base transition font-medium"
+                className="text-off-white hover:text-cream-beige text-base transition font-medium"
               >
                 info@bekalholding.com
               </a>
             </div>
             <div className="flex items-center gap-4">
-              <MapPin className="text-[#fdfaf5] w-6 h-6" />
-              <span className="text-[#f0e8db] leading-tight text-base">
+              <MapPin className="text-off-white w-6 h-6" />
+              <span className="text-off-white leading-tight text-base">
                 UAE, Saudi Arabia, India
               </span>
             </div>
@@ -50,9 +50,9 @@ const Contact = () => (
               href="https://www.linkedin.com/in/shahal-bekal-holding"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-12 h-12 rounded-full bg-[#fdfaf5] border border-[#181b22] shadow-sm hover:bg-[#f0e8db] transition"
+              className="flex items-center justify-center w-12 h-12 rounded-full bg-off-white border border-deep-navy shadow-sm hover:bg-cream-beige transition"
             >
-              <Linkedin className="text-[#ea580c] w-6 h-6" />
+              <Linkedin className="text-primary-orange w-6 h-6" />
             </a>
             {/* <a
               href="https://www.instagram.com"
@@ -70,33 +70,33 @@ const Contact = () => (
             <input
               type="text"
               placeholder="Your Name"
-              className="w-full px-5 py-4 bg-[#fdfaf5] rounded-lg border border-[#f0e8db] focus:outline-none focus:ring-3 focus:ring-[#f0e8db] text-base placeholder-[#b5b0a4] transition text-black"
+              className="w-full px-5 py-4 bg-off-white rounded-lg border border-cream-beige focus:outline-none focus:ring-3 focus:ring-cream-beige text-base placeholder-dark-gray/50 transition text-black"
             />
             <input
               type="email"
               placeholder="Your Email"
-              className="w-full px-5 py-4 bg-[#fdfaf5] rounded-lg border border-[#f0e8db] focus:outline-none focus:ring-3 focus:ring-[#f0e8db] text-base placeholder-[#b5b0a4] text-black transition"
+              className="w-full px-5 py-4 bg-off-white rounded-lg border border-cream-beige focus:outline-none focus:ring-3 focus:ring-cream-beige text-base placeholder-dark-gray/50 text-black transition"
             />
             <input
               type="text"
               placeholder="Subject"
-              className="w-full px-5 py-4 bg-[#fdfaf5] rounded-lg border border-[#f0e8db] focus:outline-none focus:ring-3 focus:ring-[#f0e8db] text-base placeholder-[#b5b0a4] text-black transition"
+              className="w-full px-5 py-4 bg-off-white rounded-lg border border-cream-beige focus:outline-none focus:ring-3 focus:ring-cream-beige text-base placeholder-dark-gray/50 text-black transition"
             />
             <textarea
               placeholder="Your Message"
               rows={5}
-              className="w-full px-5 py-4 bg-[#fdfaf5] rounded-lg border border-[#f0e8db] focus:outline-none focus:ring-3 focus:ring-[#f0e8db] text-base placeholder-[#b5b0a4] text-black transition resize-none"
+              className="w-full px-5 py-4 bg-off-white rounded-lg border border-cream-beige focus:outline-none focus:ring-3 focus:ring-cream-beige text-base placeholder-dark-gray/50 text-black transition resize-none"
             ></textarea>
             <button
               type="submit"
-              className="bg-[#ea580c]/80 text-white px-6 py-3 rounded-lg font-semibold tracking-wider text-lg shadow hover:bg-[#ea580c]/70 transition"
+              className="bg-primary-orange/80 text-white px-6 py-3 rounded-lg font-semibold tracking-wider text-lg shadow hover:bg-primary-orange/70 transition"
             >
               Send Message
             </button>
           </form>
         </div>
       </div>
-      <div className="w-24 h-1 bg-gradient-to-r from-[#ea580c]/40 to-[#ea580c] mx-auto mt-20 rounded-full" />
+      <div className="w-24 h-1 bg-gradient-to-r from-primary-orange/80 to-primary-orange mx-auto mt-20 rounded-full" />
     </div>
   </section>
 );

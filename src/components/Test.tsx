@@ -4,7 +4,7 @@ const Careers = () => (
   <section id="careers" className="py-24 bg-[#faf8f4]">
     <div className="max-w-4xl mx-auto px-4 sm:px-8">
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-extrabold tracking-tight text-[#181b22] mb-5">
+        <h2 className="text-4xl font-extrabold tracking-tight text-deep-navy mb-5">
           Careers
         </h2>
         <div className="w-16 h-1 mx-auto rounded-full mb-8 bg-gradient-to-r from-[#bfa450] to-[#e5deb9]" />

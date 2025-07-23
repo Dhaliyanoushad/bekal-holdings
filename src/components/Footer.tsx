@@ -1,7 +1,7 @@
 import { Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => (
-  <footer className="bg-[#181b22] text-[#e9e6e2] py-16">
+  <footer className="bg-deep-navy text-[#e9e6e2] py-16">
     <div className="max-w-7xl mx-auto px-4 sm:px-8">
       <div className="flex flex-col md:flex-row md:justify-between gap-12 md:gap-0">
         {/* Brand and Social */}

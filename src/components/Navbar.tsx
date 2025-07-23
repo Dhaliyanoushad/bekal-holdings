@@ -35,7 +35,7 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
       className={`fixed w-full top-0 z-50 h-20 transition-colors duration-300 ${
         isScrolled
-          ? "bg-[#181b22]"
+          ? "bg-deep-navy"
           : "bg-gradient-to-b from-black/80 to-transparent"
       }`}
     >
@@ -48,7 +48,7 @@ const Navbar = () => {
         >
           <div className="flex flex-col items-end">
             <span
-              className="text-[#ea580c] uppercase"
+              className="text-primary-orange uppercase"
               style={{
                 fontSize: "2.8rem",
                 lineHeight: "0.85",
@@ -61,7 +61,7 @@ const Navbar = () => {
               BEKAL
             </span>
             <span
-              className="text-[#ea580c]"
+              className="text-primary-orange"
               style={{
                 fontSize: "0.65rem",
                 lineHeight: "1",
@@ -82,12 +82,12 @@ const Navbar = () => {
             <a
               key={link.label}
               href={link.href}
-              className="relative px-1 py-1 text-[#f0e8db] hover:text-[#ea580c] text-sm font-medium transition-colors duration-200"
+              className="relative px-1 py-1 text-cream-beige hover:text-primary-orange text-sm font-medium transition-colors duration-200"
             >
               {link.label}
             </a>
           ))}
-          <button className="ml-6 px-5 py-2 bg-[#ea580c] hover:bg-[#c2410c] text-[#faf6ee] rounded-sm text-sm font-medium transition-colors duration-200">
+          <button className="ml-6 px-5 py-2 bg-primary-orange hover:bg-primary-orange/80 text-soft-beige rounded-sm text-sm font-medium transition-colors duration-200">
             Contact
           </button>
         </div>
@@ -96,7 +96,7 @@ const Navbar = () => {
         <motion.div whileTap={{ scale: 0.95 }} className="md:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-[#faf6ee] hover:text-[#ea580c] transition-colors p-1"
+            className="text-soft-beige hover:text-primary-orange transition-colors p-1"
           >
             {isMenuOpen ? (
               <X size={26} className="stroke-[1.5]" />
@@ -115,9 +115,9 @@ const Navbar = () => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-[#0f2e29] overflow-hidden"
+            className="md:hidden bg-deep-navy overflow-hidden"
           >
-            <div className="px-4 pb-6 pt-2 border-t border-[#005c4d]/30">
+            <div className="px-4 pb-6 pt-2 border-t border-charcoal-blue/30">
               {links.map((link, index) => (
                 <motion.a
                   key={link.label}
@@ -126,12 +126,12 @@ const Navbar = () => {
                   transition={{ delay: index * 0.05 }}
                   href={link.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="block py-3 px-2 text-[#f0e8db] hover:text-[#ea580c] transition-colors text-sm font-medium"
+                  className="block py-3 px-2 text-cream-beige hover:text-primary-orange transition-colors text-sm font-medium"
                 >
                   {link.label}
                 </motion.a>
               ))}
-              <button className="mt-4 w-full px-4 py-3 bg-[#ea580c] hover:bg-[#c2410c] text-[#faf6ee] rounded-sm text-sm font-medium transition-colors">
+              <button className="mt-4 w-full px-4 py-3 bg-primary-orange hover:bg-primary-orange/80 text-soft-beige rounded-sm text-sm font-medium transition-colors">
                 Contact
               </button>
             </div>
