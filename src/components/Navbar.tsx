@@ -17,6 +17,14 @@ const Navbar = () => {
     { label: "Contact", href: "#contact" },
     { label: "Careers", href: "#careers" },
   ];
+  const handleSmoothScroll = (e: React.MouseEvent, targetId: string) => {
+    e.preventDefault();
+    const element = document.querySelector(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+      setIsMenuOpen(false); // Close mobile menu on click
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -82,6 +90,7 @@ const Navbar = () => {
             <a
               key={link.label}
               href={link.href}
+              onClick={(e) => handleSmoothScroll(e, link.href)}
               className="relative px-1 py-1 text-cream-beige hover:text-primary-orange text-sm font-medium transition-colors duration-200"
             >
               {link.label}
