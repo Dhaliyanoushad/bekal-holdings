@@ -14,7 +14,7 @@ const Navbar = () => {
     { label: "Our Companies", href: "#companies" },
     { label: "Core Values", href: "#values" },
     { label: "Board", href: "#board" },
-    { label: "Contact", href: "#contact" },
+    // { label: "Contact", href: "#contact" },
     { label: "Careers", href: "#careers" },
   ];
   const handleSmoothScroll = (e: React.MouseEvent, targetId: string) => {
@@ -143,19 +143,17 @@ const Navbar = () => {
                   {link.label}
                 </motion.a>
               ))}
-              <a
+              <motion.a
+                // key={link.label}
+                // initial={{ x: 10, opacity: 0 }}
+                // animate={{ x: 0, opacity: 1 }}
+                // transition={{ delay: 2 }}
                 href="#contact"
-                onClick={(e) => {
-                  e.preventDefault(); // Prevent default link jump if using smooth scroll handler
-                  setIsMenuOpen(false);
-                  // optionally: smooth scroll to #contact as discussed earlier
-                }}
-                role="button"
-                tabIndex={0}
+                onClick={() => setIsMenuOpen(false)}
                 className="mt-4 w-full px-4 py-3 bg-primary-orange hover:bg-primary-orange/80 text-soft-beige rounded-sm text-sm font-medium transition-colors block text-center cursor-pointer select-none"
               >
                 Contact
-              </a>
+              </motion.a>
             </div>
           </motion.div>
         )}
