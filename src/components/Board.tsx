@@ -76,7 +76,7 @@ const AccordionItem = ({
       onClick={onToggle}
       className="flex justify-between items-center cursor-pointer select-none"
     >
-      <h3 className="text-body xs:text-xl sm:text-subheading font-bold text-charcoal-blue">
+      <h3 className="text-description xs:text-body sm:text-xl sm:text-subheading font-bold text-charcoal-blue">
         {`${member.name} – ${member.title}`}
       </h3>
       {isActive ? (
@@ -98,7 +98,10 @@ const AccordionItem = ({
         >
           <div className="mt-5 text-dark-gray space-y-4">
             {member.bio.map((para, idx) => (
-              <p key={idx} className="leading-relaxed text-description">
+              <p
+                key={idx}
+                className="leading-relaxed text-small xs:text-description"
+              >
                 {para}
               </p>
             ))}
