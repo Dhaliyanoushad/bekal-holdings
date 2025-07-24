@@ -17,10 +17,10 @@ const Values = () => {
         <div className="grid md:grid-cols-2 gap-12">
           {/* Vision */}
           <div className="bg-off-white p-10 rounded-2xl border border-cream-beige shadow-sm transition hover:shadow-md">
-            <h3 className="text-subheading font-semibold text-deep-navy mb-4">
+            <h3 className="text-xl sm:text-subheading font-semibold text-deep-navy mb-4">
               Our Vision
             </h3>
-            <p className="text-dark-gray text-description leading-relaxed">
+            <p className="text-dark-gray text-small sm:text-description leading-relaxed">
               To become a leading global conglomerate by building and acquiring
               reputed brands across diverse industries. We strive to deliver
               innovative solutions, exceptional customer experiences, and
@@ -32,10 +32,10 @@ const Values = () => {
 
           {/* Mission */}
           <div className="bg-off-white p-10 rounded-2xl border border-cream-beige shadow-sm transition hover:shadow-md">
-            <h3 className="text-subheading font-semibold text-deep-navy mb-4">
+            <h3 className="text-xl sm:text-subheading font-semibold text-deep-navy mb-4">
               Our Mission
             </h3>
-            <p className="text-dark-gray text-description leading-relaxed">
+            <p className="text-dark-gray text-small sm:text-description leading-relaxed">
               To build, acquire, and nurture leading brands across multiple
               sectors—focusing on hospitality, sports equipment, construction,
               and beyond—by embracing innovation and delivering world-class
@@ -72,7 +72,7 @@ const Values = () => {
               <div className="w-14 h-14 mx-auto flex items-center justify-center rounded-full border-2 border-primary-orange text-primary-orange text-xl font-bold mb-4">
                 {index + 1}
               </div>
-              <h4 className="sm:text-body font-semibold mb-2 text-deep-navy">
+              <h4 className="text-description sm:text-body font-semibold mb-2 text-deep-navy">
                 {item.title}
               </h4>
               <p className="text-dark-gray text-small sm:text-description">
