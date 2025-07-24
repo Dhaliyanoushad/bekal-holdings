@@ -3,6 +3,13 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Anton } from "next/font/google";
+
+const anton = Anton({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -56,15 +63,7 @@ const Navbar = () => {
         >
           <div className="flex flex-col items-end">
             <span
-              className="text-primary-orange uppercase"
-              style={{
-                fontSize: "2.8rem",
-                lineHeight: "0.85",
-                fontWeight: 400,
-                letterSpacing: "-0.03em",
-                fontFamily:
-                  'Impact, Haettenschweiler, "Arial Black", sans-serif',
-              }}
+              className={`${anton.className} text-primary-orange uppercase text-[2.3rem] sm:text-[2.8rem] leading-[0.85] font-normal tracking-[-0.03em] select-none`}
             >
               BEKAL
             </span>
