@@ -96,9 +96,12 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <button className="ml-6 px-5 py-2 bg-primary-orange hover:bg-primary-orange/80 text-soft-beige rounded-sm text-sm font-medium transition-colors duration-200">
+          <a
+            href="#contact"
+            className="ml-6 px-5 py-2 bg-primary-orange hover:bg-primary-orange/80 text-soft-beige rounded-sm text-sm font-medium transition-colors duration-200"
+          >
             Contact
-          </button>
+          </a>
         </div>
 
         {/* Mobile Menu Trigger */}
@@ -140,9 +143,19 @@ const Navbar = () => {
                   {link.label}
                 </motion.a>
               ))}
-              <button className="mt-4 w-full px-4 py-3 bg-primary-orange hover:bg-primary-orange/80 text-soft-beige rounded-sm text-sm font-medium transition-colors">
+              <a
+                href="#contact"
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent default link jump if using smooth scroll handler
+                  setIsMenuOpen(false);
+                  // optionally: smooth scroll to #contact as discussed earlier
+                }}
+                role="button"
+                tabIndex={0}
+                className="mt-4 w-full px-4 py-3 bg-primary-orange hover:bg-primary-orange/80 text-soft-beige rounded-sm text-sm font-medium transition-colors block text-center cursor-pointer select-none"
+              >
                 Contact
-              </button>
+              </a>
             </div>
           </motion.div>
         )}
