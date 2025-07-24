@@ -42,7 +42,7 @@ const Navbar = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       className={`fixed w-full top-0 z-50 h-20 transition-colors duration-300 ${
-        isScrolled
+        isScrolled || isMenuOpen
           ? "bg-deep-navy"
           : "bg-gradient-to-b from-black/80 to-transparent"
       }`}
@@ -137,7 +137,9 @@ const Navbar = () => {
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: index * 0.05 }}
                   href={link.href}
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                  }}
                   className="block py-3 px-2 text-cream-beige hover:text-primary-orange transition-colors text-sm font-medium"
                 >
                   {link.label}
