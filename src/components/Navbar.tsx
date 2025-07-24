@@ -140,16 +140,7 @@ const Navbar = () => {
                   {link.label}
                 </motion.a>
               ))}
-              <button
-                className="mt-4 w-full px-4 py-3 bg-primary-orange hover:bg-primary-orange/80 text-soft-beige rounded-sm text-sm font-medium transition-colors"
-                onClick={() => {
-                  const el = document.getElementById("contact");
-                  if (el) {
-                    el.scrollIntoView({ behavior: "smooth", block: "start" });
-                  }
-                  setIsMenuOpen(false); // Close menu after clicking
-                }}
-              >
+              <button className="mt-4 w-full px-4 py-3 bg-primary-orange hover:bg-primary-orange/80 text-soft-beige rounded-sm text-sm font-medium transition-colors">
                 Contact
               </button>
             </div>
