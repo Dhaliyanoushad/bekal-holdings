@@ -147,7 +147,7 @@ const Navbar = () => {
                   if (el) {
                     el.scrollIntoView({ behavior: "smooth", block: "start" });
                   }
-                  setIsMenuOpen(false); // Close mobile menu when clicked
+                  setIsMenuOpen(false); // Close menu after clicking
                 }}
               >
                 Contact
