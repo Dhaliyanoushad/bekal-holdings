@@ -20,7 +20,7 @@ const Values = () => {
             <h3 className="text-xl sm:text-subheading font-semibold text-deep-navy mb-4">
               Our Vision
             </h3>
-            <p className="text-dark-gray text-small sm:text-description leading-relaxed">
+            <p className="text-dark-gray text-description leading-relaxed">
               To become a leading global conglomerate by building and acquiring
               reputed brands across diverse industries. We strive to deliver
               innovative solutions, exceptional customer experiences, and
@@ -35,7 +35,7 @@ const Values = () => {
             <h3 className="text-xl sm:text-subheading font-semibold text-deep-navy mb-4">
               Our Mission
             </h3>
-            <p className="text-dark-gray text-small sm:text-description leading-relaxed">
+            <p className="text-dark-gray text-description leading-relaxed">
               To build, acquire, and nurture leading brands across multiple
               sectors—focusing on hospitality, sports equipment, construction,
               and beyond—by embracing innovation and delivering world-class
