@@ -84,7 +84,7 @@ const Navbar = () => {
           <img
             src="images/bekal.png"
             alt=""
-            className="flex flex-col items-end sm:w-[200px] h-auto w-[150px] object-contain"
+            className="flex flex-col items-end sm:w-[200px] h-auto w-[120px] object-contain"
             // style={{
             //   width: "200px",
             //   height: "auto",
