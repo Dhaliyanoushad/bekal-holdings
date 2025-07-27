@@ -19,7 +19,7 @@ const Contact = () => (
         <div className="flex flex-col gap-10 sm:gap-5">
           <div className="flex flex-col gap-6">
             <div className="flex items-center gap-4">
-              <Phone className="text-milk-linen w-6 h-6" />
+              <Phone className="text-brushed-gold w-6 h-6" />
               <a
                 href="tel:0501105765"
                 className="text-milk-linen hover:text-milk-linen text-description transition font-medium"
@@ -28,7 +28,7 @@ const Contact = () => (
               </a>
             </div>
             <div className="flex items-center gap-4">
-              <Mail className="text-milk-linen w-6 h-6" />
+              <Mail className="text-brushed-gold w-6 h-6" />
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bekalholding.com"
                 target="_blank"
@@ -39,7 +39,7 @@ const Contact = () => (
               </a>
             </div>
             <div className="flex items-center gap-4">
-              <MapPin className="text-milk-linen w-6 h-6" />
+              <MapPin className="text-brushed-gold w-6 h-6" />
               <span className="text-milk-linen leading-tight text-description">
                 UAE, Saudi Arabia, India
               </span>
@@ -50,9 +50,9 @@ const Contact = () => (
               href="https://www.linkedin.com/in/shahal-bekal-holding"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-12 h-12 rounded-full bg-milk-linen border border-black shadow-sm hover:bg-milk-linen transition"
+              className="flex items-center justify-center w-12 h-12 rounded-full bg-milk-linen/50 border border-black shadow-sm hover:bg-milk-linen transition"
             >
-              <Linkedin className="text-primary-orange w-6 h-6" />
+              <Linkedin className="text-brushed-gold w-6 h-6" />
             </a>
             {/* <a
               href="https://www.instagram.com"
@@ -89,7 +89,7 @@ const Contact = () => (
             ></textarea>
             <button
               type="submit"
-              className="bg-primary-orange/80 text-white px-6 py-3 rounded-lg font-semibold tracking-wider text-body shadow hover:bg-primary-orange/70 transition"
+              className="bg-primary-orange text-white px-6 py-3 rounded-lg font-semibold tracking-wider text-body shadow hover:bg-secondary-orange transition"
             >
               Send Message
             </button>

@@ -28,7 +28,7 @@ const ValueCard = ({
   title: string;
   desc: string;
 }) => (
-  <div className="bg-milk-linen p-8 rounded-xl border border-deep-navy shadow-sm hover:shadow-md transition text-center flex flex-col items-center">
+  <div className="bg-milk-linen p-8 shadow-sm hover:shadow-md transition text-center flex flex-col items-center">
     <div className="w-14 h-14 flex items-center justify-center rounded-full border-2 border-primary-orange text-primary-orange text-xl font-bold mb-4">
       {number}
     </div>
@@ -46,7 +46,7 @@ const InfoPanel = ({
   heading: string;
   children: React.ReactNode;
 }) => (
-  <div className="bg-milk-linen p-8 sm:p-10 rounded-2xl border border-dark-gray/50 shadow-sm hover:shadow-md transition">
+  <div className="bg-milk-linen p-8 sm:p-10 shadow-sm hover:shadow-md transition">
     <h3 className="font-semibold text-deep-navy text-lg sm:text-xl mb-4">
       {heading}
     </h3>

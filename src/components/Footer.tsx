@@ -20,7 +20,7 @@ const Footer = () => (
               rel="noopener noreferrer"
               className="w-11 h-11 flex items-center justify-center rounded-full bg-dark-gray hover:bg-dark-gray/80 border border-black shadow transition"
             >
-              <Linkedin className="text-primary-orange/80 w-6 h-6" />
+              <Linkedin className="text-brushed-gold w-6 h-6" />
             </a>
             {/* <a
               href="https://www.instagram.com"
@@ -119,13 +119,13 @@ const Footer = () => (
           </div>
           <ul className="space-y-4 text-milk-linen/80 text-description">
             <li className="flex items-center gap-2 hover:text-milk-linen transition">
-              <Phone size={17} className="text-milk-linen" />
+              <Phone size={17} className="text-brushed-gold" />
               <a href="tel:0501105765" className="tracking-wide">
                 0501105765
               </a>
             </li>
             <li className="flex items-center gap-2 hover:text-milk-linen transition">
-              <Mail size={17} className="text-milk-linen" />
+              <Mail size={17} className="text-brushed-gold" />
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bekalholding.com"
                 target="_blank"
@@ -136,7 +136,7 @@ const Footer = () => (
               </a>
             </li>
             <li className="flex items-center gap-2">
-              <MapPin size={17} className="text-milk-linen" />
+              <MapPin size={17} className="text-brushed-gold" />
               <span className="tracking-wide">UAE, Saudi Arabia, India</span>
             </li>
           </ul>

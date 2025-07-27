@@ -78,7 +78,7 @@ const Careers = () => (
           </div>
           <button
             type="submit"
-            className="mt-2 bg-primary-orange/80 text-white px-7 py-3 rounded-lg font-semibold tracking-wide text-body shadow hover:bg-primary-orange/70 transition"
+            className="mt-2 bg-primary-orange text-white px-7 py-3 rounded-lg font-semibold tracking-wide text-body shadow hover:bg-secondary-orange transition"
           >
             Submit Application
           </button>

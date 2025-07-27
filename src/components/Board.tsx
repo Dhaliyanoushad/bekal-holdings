@@ -71,7 +71,7 @@ const AccordionItem = ({
   isActive: boolean;
   onToggle: () => void;
 }) => (
-  <div className="bg-milk-linen p-8 rounded-2xl shadow hover:shadow-lg border border-milk-linen transition-all">
+  <div className="bg-white p-8 rounded-2xl shadow hover:shadow-lg border border-milk-linen transition-all">
     <div
       onClick={onToggle}
       className="flex justify-between items-center cursor-pointer select-none"
