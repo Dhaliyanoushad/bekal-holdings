@@ -71,12 +71,12 @@ const AccordionItem = ({
   isActive: boolean;
   onToggle: () => void;
 }) => (
-  <div className="bg-off-white p-8 rounded-2xl shadow hover:shadow-lg border border-cream-beige transition-all">
+  <div className="bg-milk-linen p-8 rounded-2xl shadow hover:shadow-lg border border-milk-linen transition-all">
     <div
       onClick={onToggle}
       className="flex justify-between items-center cursor-pointer select-none"
     >
-      <h3 className="text-description xs:text-body sm:text-xl sm:text-subheading font-bold text-charcoal-blue">
+      <h3 className="text-description xs:text-body sm:text-xl sm:text-subheading font-bold text-black">
         {`${member.name} – ${member.title}`}
       </h3>
       {isActive ? (
@@ -119,10 +119,10 @@ const Board = () => {
     setActiveIdx(idx === activeIdx ? null : idx);
 
   return (
-    <section id="board" className="py-14 md:py-20 bg-cream-beige scroll-mt-20">
+    <section id="board" className="py-14 md:py-20 bg-milk-linen scroll-mt-20">
       <div className="max-w-5xl mx-auto px-4 sm:px-8">
         <div className="text-center mb-14">
-          <h2 className="text-heading-sm sm:text-heading font-bold text-deep-navy mb-2 tracking-tight">
+          <h2 className="text-heading-sm sm:text-heading font-bold text-black mb-2 tracking-tight">
             Board of Directors
           </h2>
           <div className="w-20 h-1 bg-primary-orange mx-auto mb-8 rounded-full" />

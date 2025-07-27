@@ -40,17 +40,14 @@ const companies = [
 ];
 
 const Companies = () => (
-  <section
-    id="companies"
-    className="py-20 bg-charcoal-blue relative scroll-mt-20"
-  >
+  <section id="companies" className="py-20 bg-white relative scroll-mt-20">
     <div className="max-w-7xl mx-auto px-4 sm:px-8">
       <div className="text-center mb-16">
-        <h2 className="text-heading-sm sm:text-heading font-bold text-off-white mb-4 tracking-tight">
+        <h2 className="text-heading-sm sm:text-heading font-bold text-black mb-4 tracking-tight">
           Our Portfolio Companies
         </h2>
         <div className="w-20 h-1 bg-primary-orange mx-auto mb-8 rounded-full" />
-        <p className="text-description sm:text-body text-cream-beige max-w-2xl mx-auto leading-relaxed">
+        <p className="text-description sm:text-body text-dark-gray max-w-2xl mx-auto leading-relaxed">
           Our extensive portfolio reflects our ability to adapt to market
           dynamics and meet the evolving needs of our clients in the
           fast-changing economies of the UAE and Saudi Arabia. Companies under
@@ -67,10 +64,10 @@ const Companies = () => (
               <span className="text-primary-orange text-description font-bold tracking-widest uppercase mb-2">
                 {String(idx + 1).padStart(2, "0")}
               </span>
-              <h3 className="text-xl md:text-subheading font-semibold text-off-white mb-2">
+              <h3 className="text-xl md:text-subheading font-semibold text-black mb-2">
                 {company.title}
               </h3>
-              <p className="text-description text-cream-beige font-medium leading-relaxed">
+              <p className="text-description text-dark-gray font-medium leading-relaxed">
                 {company.desc}
               </p>
             </div>

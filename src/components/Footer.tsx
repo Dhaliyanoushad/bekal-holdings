@@ -1,15 +1,15 @@
 import { Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => (
-  <footer className="bg-deep-navy py-16">
+  <footer className="bg-black py-16">
     <div className="max-w-7xl mx-auto px-4 sm:px-8">
       <div className="flex flex-col md:flex-row md:justify-between gap-12 md:gap-0">
         {/* Brand and Social */}
         <div className="flex-1 min-w-[200px] md:pr-16">
-          <h3 className="text-subheading font-bold mb-5 tracking-wide text-off-white">
+          <h3 className="text-subheading font-bold mb-5 tracking-wide text-milk-linen">
             Bekal International Holding
           </h3>
-          <p className="mb-6 text-cream-beige/60 font-medium leading-relaxed text-description">
+          <p className="mb-6 text-milk-linen/60 font-medium leading-relaxed text-description">
             A leading diversified business group with operations across Kingdom
             of Saudi Arabia, United Arab Emirates, and India since 1981.
           </p>
@@ -18,7 +18,7 @@ const Footer = () => (
               href="https://www.linkedin.com/in/shahal-bekal-holding"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-11 h-11 flex items-center justify-center rounded-full bg-dark-gray hover:bg-dark-gray/80 border border-charcoal-blue shadow transition"
+              className="w-11 h-11 flex items-center justify-center rounded-full bg-dark-gray hover:bg-dark-gray/80 border border-black shadow transition"
             >
               <Linkedin className="text-primary-orange/80 w-6 h-6" />
             </a>
@@ -28,20 +28,20 @@ const Footer = () => (
               rel="noopener noreferrer"
               className="w-11 h-11 flex items-center justify-center rounded-full bg-white/10 hover:bg-[#cbb778]/20 border border-[#1d223a] shadow transition"
             >
-              <Instagram className="text-cream-beige w-6 h-6" />
+              <Instagram className="text-milk-linen w-6 h-6" />
             </a> */}
           </div>
         </div>
         {/* Quick Links */}
         <div className="flex-1 min-w-[140px]">
-          <div className="mb-4 text-description font-semibold tracking-wider text-off-white">
+          <div className="mb-4 text-description font-semibold tracking-wider text-milk-linen">
             Quick Links
           </div>
           <ul className="space-y-2 font-medium">
             <li>
               <a
                 href="#home"
-                className="text-cream-beige/60 hover:text-cream-beige transition"
+                className="text-milk-linen/60 hover:text-milk-linen transition"
               >
                 Home
               </a>
@@ -49,7 +49,7 @@ const Footer = () => (
             <li>
               <a
                 href="#about"
-                className="text-cream-beige/60 hover:text-cream-beige transition"
+                className="text-milk-linen/60 hover:text-milk-linen transition"
               >
                 About Us
               </a>
@@ -57,7 +57,7 @@ const Footer = () => (
             <li>
               <a
                 href="#companies"
-                className="text-cream-beige/60 hover:text-cream-beige transition"
+                className="text-milk-linen/60 hover:text-milk-linen transition"
               >
                 Our Companies
               </a>
@@ -65,7 +65,7 @@ const Footer = () => (
             <li>
               <a
                 href="#values"
-                className="text-cream-beige/60 hover:text-cream-beige transition"
+                className="text-milk-linen/60 hover:text-milk-linen transition"
               >
                 Core Values
               </a>
@@ -74,14 +74,14 @@ const Footer = () => (
         </div>
         {/* Companies */}
         <div className="flex-1 min-w-[160px]">
-          <div className="mb-4 text-description font-semibold tracking-wider text-off-white">
+          <div className="mb-4 text-description font-semibold tracking-wider text-milk-linen">
             Our Companies
           </div>
           <ul className="space-y-2 font-medium">
             <li>
               <a
                 href="#companies"
-                className="text-cream-beige/60 hover:text-cream-beige transition"
+                className="text-milk-linen/60 hover:text-milk-linen transition"
               >
                 Bekal Restaurant
               </a>
@@ -89,7 +89,7 @@ const Footer = () => (
             <li>
               <a
                 href="#companies"
-                className="text-cream-beige/60 hover:text-cream-beige transition"
+                className="text-milk-linen/60 hover:text-milk-linen transition"
               >
                 Bekal Events & Catering
               </a>
@@ -97,7 +97,7 @@ const Footer = () => (
             <li>
               <a
                 href="#companies"
-                className="text-cream-beige/60 hover:text-cream-beige transition"
+                className="text-milk-linen/60 hover:text-milk-linen transition"
               >
                 Bekal Baker's
               </a>
@@ -105,7 +105,7 @@ const Footer = () => (
             <li>
               <a
                 href="#companies"
-                className="text-cream-beige/60 hover:text-cream-beige transition"
+                className="text-milk-linen/60 hover:text-milk-linen transition"
               >
                 Bekal Constructions
               </a>
@@ -114,18 +114,18 @@ const Footer = () => (
         </div>
         {/* Contact */}
         <div className="flex-1 min-w-[180px]">
-          <div className="mb-4 text-description font-semibold tracking-wider text-off-white">
+          <div className="mb-4 text-description font-semibold tracking-wider text-milk-linen">
             Contact
           </div>
-          <ul className="space-y-4 text-cream-beige/80 text-description">
-            <li className="flex items-center gap-2 hover:text-cream-beige transition">
-              <Phone size={17} className="text-cream-beige" />
+          <ul className="space-y-4 text-milk-linen/80 text-description">
+            <li className="flex items-center gap-2 hover:text-milk-linen transition">
+              <Phone size={17} className="text-milk-linen" />
               <a href="tel:0501105765" className="tracking-wide">
                 0501105765
               </a>
             </li>
-            <li className="flex items-center gap-2 hover:text-cream-beige transition">
-              <Mail size={17} className="text-cream-beige" />
+            <li className="flex items-center gap-2 hover:text-milk-linen transition">
+              <Mail size={17} className="text-milk-linen" />
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bekalholding.com"
                 target="_blank"
@@ -136,21 +136,21 @@ const Footer = () => (
               </a>
             </li>
             <li className="flex items-center gap-2">
-              <MapPin size={17} className="text-cream-beige" />
+              <MapPin size={17} className="text-milk-linen" />
               <span className="tracking-wide">UAE, Saudi Arabia, India</span>
             </li>
           </ul>
         </div>
       </div>
-      <div className="border-t border-charcoal-blue mt-14 pt-8 text-center">
-        <p className="text-off-white/80 text-body">
+      <div className="border-t border-black mt-14 pt-8 text-center">
+        <p className="text-milk-linen/80 text-body">
           &copy; {new Date().getFullYear()} Bekal International Holding. All
           rights reserved.
         </p>
-        <p className="text-description text-off-white/80 mt-1">
+        <p className="text-description text-milk-linen/80 mt-1">
           <a
             href="https://www.bekalholding.com"
-            className="hover:text-cream-beige transition"
+            className="hover:text-milk-linen transition"
             target="_blank"
           >
             www.bekalholding.com

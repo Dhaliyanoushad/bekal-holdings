@@ -8,6 +8,18 @@
   --color-cream-beige: #f0e8db;
   --color-dark-gray: #424242;
   --color-off-white: #fdfaf5;
+  --color-brushed-gold: #ccba78;
+  --color-copper: #b87333;
+  --color-cerulean-frost: #6db5ca; /* Cerulean Frost [3] */
+  --color-powder-blue: #b8d8e0; /* Powder Blue [7][11] */
+  --color-milk-linen: #fcf5ef; /* Milk/Linen [8][16][20] */
+  --color-light-orange: #ff7235; /* Light Orange [9][17] */
+  --color-mustard-gold: #7f3800; /* Deep mustard-gold, warm and earthy */
+  --color-rich-copper: #b45801; /* Rich, burnished copper orange */
+  --color-vivid-tangerine: #df6706; /* Bright tangerine orange */
+  --color-indigo-slate: #3d4857; /* Subdued indigo-slate blue */
+  --color-platinum-gray: #a9aaaf; /* Pale, modern platinum gray */
+  --color-cloud-white: #dadbdd; /* Soft, cloudy white-gray */
   /* --breakpoint-md: 976px; */
   --breakpoint-sm: 640px;
   --breakpoint-xs: 500px;

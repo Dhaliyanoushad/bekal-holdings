@@ -2,13 +2,13 @@ import React from "react";
 
 const MissionSection = () => (
   <section
-    className="w-full min-h-[320px] bg-cream-beige flex flex-row scroll-mt-20"
+    className="w-full min-h-[320px] bg-milk-linen flex flex-row scroll-mt-20"
     id="about"
   >
     {/* Left Text */}
     <div className="flex-1 flex items-center justify-center px-8 py-16">
       <div className="max-w-md">
-        <h2 className="text-heading-sm sm:text-heading font-bold text-deep-navy mb-4 tracking-wide leading-tight">
+        <h2 className="text-heading-sm sm:text-heading font-bold text-black mb-4 tracking-wide leading-tight">
           About Us
         </h2>
         <p className="text-small sm:text-description text-dark-gray max-w-2xl leading-relaxed font-medium">
@@ -22,7 +22,7 @@ const MissionSection = () => (
         </p>
         <a
           href="#contact"
-          className="mt-7 inline-block px-6 py-2 bg-charcoal-blue text-white rounded-md font-semibold text-description hover:bg-deep-navy transition"
+          className="mt-7 inline-block px-6 py-2 bg-primary-orange text-milk-linen rounded-md font-semibold text-description hover:bg-secondary-orange transition"
         >
           Contact Us
         </a>

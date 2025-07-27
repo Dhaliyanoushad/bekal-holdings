@@ -50,7 +50,7 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
       className={`fixed w-full top-0 z-50 h-20 transition-colors duration-300 ${
         isScrolled || isMenuOpen
-          ? "bg-deep-navy"
+          ? "bg-black"
           : "bg-gradient-to-b from-black/80 to-transparent"
       }`}
     >
@@ -61,7 +61,7 @@ const Navbar = () => {
           transition={{ type: "spring", stiffness: 400 }}
           className="flex items-center -ml-2 cursor-pointer"
         >
-          <div className="flex flex-col items-end">
+          {/* <div className="flex flex-col items-end">
             <span
               className={`${anton.className} text-primary-orange uppercase text-[2.3rem] sm:text-[2.8rem] leading-[0.85] font-normal tracking-[-0.03em] select-none`}
             >
@@ -80,7 +80,17 @@ const Navbar = () => {
             >
               Holding
             </span>
-          </div>
+          </div> */}
+          <img
+            src="images/bekal.png"
+            alt=""
+            className="flex flex-col items-end sm:w-[200px] h-auto w-[150px] object-contain"
+            // style={{
+            //   width: "200px",
+            //   height: "auto",
+            //   objectFit: "contain",
+            // }}
+          />
         </motion.div>
 
         {/* Desktop Menu - Changed to color transitions only */}
@@ -90,7 +100,7 @@ const Navbar = () => {
               key={link.label}
               href={link.href}
               onClick={(e) => handleSmoothScroll(e, link.href)}
-              className="relative px-1 py-1 text-cream-beige hover:text-primary-orange text-sm font-medium transition-colors duration-200"
+              className="relative px-1 py-1 text-milk-linen hover:text-primary-orange text-sm font-medium transition-colors duration-200"
             >
               {link.label}
             </a>
@@ -126,9 +136,9 @@ const Navbar = () => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="min-[976px]:hidden bg-deep-navy overflow-hidden"
+            className="min-[976px]:hidden bg-black overflow-hidden"
           >
-            <div className="px-4 pb-6 pt-2 border-t border-charcoal-blue/30">
+            <div className="px-4 pb-6 pt-2 border-t border-black/30">
               {links.map((link, index) => (
                 <motion.a
                   key={link.label}
@@ -139,7 +149,7 @@ const Navbar = () => {
                   onClick={() => {
                     setIsMenuOpen(false);
                   }}
-                  className="block py-3 px-2 text-cream-beige hover:text-primary-orange transition-colors text-sm font-medium"
+                  className="block py-3 px-2 text-milk-linen hover:text-primary-orange transition-colors text-sm font-medium"
                 >
                   {link.label}
                 </motion.a>
