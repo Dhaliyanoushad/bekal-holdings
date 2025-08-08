@@ -31,7 +31,7 @@ const MissionSection = () => (
     {/* Right Image */}
     <div className="flex-1 min-h-[260px] hidden md:block">
       <img
-        src="/images/1.jpg"
+        src="/images/Dubai-Skyline.webp"
         alt="Saudi Landscape"
         className="w-full h-full object-cover"
         style={{ minHeight: 260 }}
