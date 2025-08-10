@@ -100,7 +100,7 @@ const Navbar = () => {
               key={link.label}
               href={link.href}
               onClick={(e) => handleSmoothScroll(e, link.href)}
-              className="relative px-1 py-1 text-milk-linen hover:text-primary-orange text-sm font-medium transition-colors duration-200"
+              className="relative px-1 py-1 text-off-white hover:text-primary-orange text-sm font-medium transition-colors duration-200"
             >
               {link.label}
             </a>
@@ -149,7 +149,7 @@ const Navbar = () => {
                   onClick={() => {
                     setIsMenuOpen(false);
                   }}
-                  className="block py-3 px-2 text-milk-linen hover:text-primary-orange transition-colors text-sm font-medium"
+                  className="block py-3 px-2 text-off-white hover:text-primary-orange transition-colors text-sm font-medium"
                 >
                   {link.label}
                 </motion.a>

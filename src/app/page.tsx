@@ -19,8 +19,8 @@ export default function Home() {
       <Commitment />
       <Values />
       <Board />
-      <Contact />
       <Careers />
+      <Contact />
       <Footer />
     </>
   );

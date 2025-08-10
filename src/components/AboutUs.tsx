@@ -2,7 +2,7 @@ import React from "react";
 
 const MissionSection = () => (
   <section
-    className="w-full min-h-[320px] bg-milk-linen flex flex-row scroll-mt-20"
+    className="w-full min-h-[320px] bg-white flex flex-row scroll-mt-20"
     id="about"
   >
     {/* Left Text */}
@@ -22,7 +22,7 @@ const MissionSection = () => (
         </p>
         <a
           href="#contact"
-          className="mt-7 inline-block px-6 py-2 bg-primary-orange text-milk-linen rounded-md font-semibold text-description hover:bg-secondary-orange transition"
+          className="mt-7 inline-block px-6 py-2 bg-primary-orange text-off-white rounded-md font-semibold text-description hover:bg-secondary-orange transition"
         >
           Contact Us
         </a>
