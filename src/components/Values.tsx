@@ -55,7 +55,10 @@ const InfoPanel = ({
 );
 
 const Values = () => (
-  <section id="values" className="py-16 lg:py-24 bg-off-white scroll-mt-20">
+  <section
+    id="values"
+    className="py-16 lg:py-24 bg-white scroll-mt-20 color-change"
+  >
     <div className="max-w-7xl mx-auto px-4 sm:px-10 lg:px-20">
       <header className="text-center mb-14">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-deep-navy tracking-wide mb-4">

@@ -2,7 +2,7 @@ import React from "react";
 
 const MissionSection = () => (
   <section
-    className="w-full min-h-[320px] bg-white flex flex-row-reverse scroll-mt-20"
+    className="w-full min-h-[320px] bg-white flex flex-row-reverse scroll-mt-20 color-change"
     id="about"
   >
     {/* Left Text */}

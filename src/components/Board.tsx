@@ -71,7 +71,7 @@ const AccordionItem = ({
   isActive: boolean;
   onToggle: () => void;
 }) => (
-  <div className="bg-off-white p-8 rounded-2xl shadow hover:shadow-lg border border-off-white transition-all">
+  <div className="bg-off-white p-8 rounded-2xl shadow hover:shadow-lg border border-off-white transition-all ">
     <div
       onClick={onToggle}
       className="flex justify-between items-center cursor-pointer select-none"
@@ -119,7 +119,10 @@ const Board = () => {
     setActiveIdx(idx === activeIdx ? null : idx);
 
   return (
-    <section id="board" className="py-14 md:py-20 bg-white scroll-mt-20">
+    <section
+      id="board"
+      className="py-14 md:py-20 bg-white scroll-mt-20 color-change"
+    >
       <div className="max-w-5xl mx-auto px-4 sm:px-8">
         <div className="text-center mb-14">
           <h2 className="text-heading-sm sm:text-heading font-bold text-black mb-2 tracking-tight">

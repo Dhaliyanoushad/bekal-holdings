@@ -1,13 +1,12 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { Questrial } from "next/font/google";
+// import ScrollColorHandler from "../components/ScrollColorHandler";
+
 const questrial = Questrial({
   subsets: ["latin"],
   weight: "400",
 });
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Bekal International Holding",
@@ -21,7 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={questrial.className}>{children}</body>
+      <body className={`${questrial.className} bg-white`}>
+        {/* <ScrollColorHandler /> */}
+        {children}
+      </body>
     </html>
   );
 }
