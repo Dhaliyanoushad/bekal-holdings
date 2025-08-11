@@ -96,7 +96,7 @@ const AccordionItem = ({
           variants={accordionVariants}
           style={{ overflow: "hidden" }}
         >
-          <div className="mt-5 text-dark-gray space-y-4">
+          <div className="mt-5 text-black/80 graytext space-y-4">
             {member.bio.map((para, idx) => (
               <p
                 key={idx}
