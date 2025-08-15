@@ -26,7 +26,7 @@ const Careers = () => (
               </label>
               <input
                 type="text"
-                className="w-full px-5 py-4 border border-off-white bg-brushed-gold/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-off-white transition text-description text-black/80 graytext"
+                className="w-full px-5 py-4 border border-off-white bg-off-white rounded-lg focus:outline-none focus:ring-2 focus:ring-off-white transition text-description text-dark-gray"
               />
             </div>
             <div>
@@ -35,7 +35,7 @@ const Careers = () => (
               </label>
               <input
                 type="tel"
-                className="w-full px-5 py-4 border border-off-white bg-brushed-gold/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-off-white transition text-description text-black/80 graytext"
+                className="w-full px-5 py-4 border border-off-white bg-off-white rounded-lg focus:outline-none focus:ring-2 focus:ring-off-white transition text-description text-dark-gray"
               />
             </div>
           </div>
@@ -46,7 +46,7 @@ const Careers = () => (
               </label>
               <input
                 type="url"
-                className="w-full px-5 py-4 border border-off-white bg-brushed-gold/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-off-white transition text-description text-black/80 graytext"
+                className="w-full px-5 py-4 border border-off-white bg-off-white rounded-lg focus:outline-none focus:ring-2 focus:ring-off-white transition text-description text-dark-gray"
               />
             </div>
             <div>
@@ -55,7 +55,7 @@ const Careers = () => (
               </label>
               <input
                 type="url"
-                className="w-full px-5 py-4 border border-off-white bg-brushed-gold/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-off-white transition text-description text-black/80 graytext"
+                className="w-full px-5 py-4 border border-off-white bg-off-white rounded-lg focus:outline-none focus:ring-2 focus:ring-off-white transition text-description text-dark-gray"
               />
             </div>
           </div>
@@ -64,7 +64,7 @@ const Careers = () => (
               Visa Status
             </label>
             <div className="relative w-full">
-              <select className="w-full px-5 py-4 border border-off-white bg-brushed-gold/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-off-white transition text-description appearance-none text-black/80">
+              <select className="w-full px-5 py-4 border border-off-white bg-off-white rounded-lg focus:outline-none focus:ring-2 focus:ring-off-white transition text-description appearance-none text-dark-gray">
                 <option>Valid visa</option>
                 <option>Transfer soon</option>
                 <option>Outside country</option>
@@ -91,7 +91,7 @@ const Careers = () => (
             <label className="block text-black font-medium mb-2">
               Upload CV (PDF)
             </label>
-            <div className="w-full px-5 py-8 border-2 border-dashed border-off-white bg-brushed-gold/20 rounded-xl text-black/80 graytext/50 text-center cursor-pointer hover:border-off-white transition">
+            <div className="w-full px-5 py-8 border-2 border-dashed border-off-white bg-off-white rounded-xl text-dark-gray/50 text-center cursor-pointer hover:border-off-white transition">
               Drag and drop your CV here, or click to browse
             </div>
           </div>
