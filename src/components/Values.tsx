@@ -28,14 +28,14 @@ const ValueCard = ({
   title: string;
   desc: string;
 }) => (
-  <div className="bg-white p-8 shadow-sm hover:shadow-md transition text-center flex flex-col items-center">
-    <div className="w-14 h-14 flex items-center justify-center rounded-full border-2 border-primary-orange text-primary-orange text-xl font-bold mb-4">
+  <div className="bg-off-white text-black p-8 shadow-sm hover:shadow-md transition text-center flex flex-col items-center color-change">
+    <div className="bg-white w-14 h-14 flex items-center justify-center rounded-full border-2 border-primary-orange text-primary-orange text-xl font-bold mb-4">
       {number}
     </div>
-    <h4 className="font-semibold mb-2 text-deep-navy text-base sm:text-lg lg:text-xl">
+    <h4 className="font-semibold mb-2 text-base sm:text-lg lg:text-xl">
       {title}
     </h4>
-    <p className="text-dark-gray text-sm lg:text-base">{desc}</p>
+    <p className="text-black/80 graytext text-sm lg:text-base">{desc}</p>
   </div>
 );
 
@@ -46,22 +46,22 @@ const InfoPanel = ({
   heading: string;
   children: React.ReactNode;
 }) => (
-  <div className="bg-white p-8 sm:p-10 shadow-sm hover:shadow-md transition">
-    <h3 className="font-semibold text-deep-navy text-lg sm:text-xl mb-4">
-      {heading}
-    </h3>
-    <p className="text-dark-gray leading-relaxed text-base">{children}</p>
+  <div className="bg-off-white p-8 sm:p-10 shadow-sm hover:shadow-md transition text-black color-change">
+    <h3 className="font-semibold text-lg sm:text-xl mb-4">{heading}</h3>
+    <p className="text-black/80 graytext leading-relaxed text-base">
+      {children}
+    </p>
   </div>
 );
 
 const Values = () => (
   <section
     id="values"
-    className="py-16 lg:py-24 bg-white scroll-mt-20 color-change"
+    className="py-16 lg:py-24 bg-white text-black scroll-mt-20 color-change"
   >
     <div className="max-w-7xl mx-auto px-4 sm:px-10 lg:px-20">
       <header className="text-center mb-14">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-deep-navy tracking-wide mb-4">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-wide mb-4">
           Core Values
         </h2>
         <div className="w-16 h-1 mx-auto bg-primary-orange rounded-full" />

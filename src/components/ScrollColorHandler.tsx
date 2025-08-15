@@ -4,15 +4,20 @@ import { useEffect } from "react";
 
 export default function ScrollColorHandler() {
   useEffect(() => {
-    const triggerPoint = 4200; // px
+    const triggerPoint = 3200; // px
     const handleScroll = () => {
       console.log(`Scroll position: ${window.scrollY}`);
 
       const elements = document.querySelectorAll<HTMLElement>(".color-change");
+      const graytext = document.querySelectorAll<HTMLElement>(".graytext");
       if (window.scrollY >= triggerPoint) {
         elements.forEach((el) => {
           el.classList.remove("bg-white", "text-black");
           el.classList.add("bg-black", "text-white");
+        });
+        graytext.forEach((el) => {
+          el.classList.remove("text-black/80");
+          el.classList.add("text-white/60");
         });
         document.body.classList.remove("bg-white");
         document.body.classList.add("bg-black");
