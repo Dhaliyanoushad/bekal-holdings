@@ -1,14 +1,17 @@
 import { Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
 
 const Contact = () => (
-  <section id="contact" className="py-20 bg-white scroll-mt-20 color-change">
+  <section
+    id="contact"
+    className="pt-20 pb-28 bg-white scroll-mt-20 color-change text-black"
+  >
     <div className="max-w-6xl mx-auto px-4 sm:px-8">
       <div className="text-center mb-16">
-        <h2 className="text-heading font-bold tracking-tight text-black mb-5">
+        <h2 className="text-heading font-bold tracking-tight mb-5">
           Contact Us
         </h2>
         <div className="w-16 h-1 mx-auto rounded-full mb-8 bg-gradient-to-r from-primary-orange to-primary-orange/80" />
-        <p className="text-body text-black max-w-xl mx-auto leading-relaxed">
+        <p className="text-body max-w-xl mx-auto leading-relaxed">
           We value new connections and conversations. Please reach out via your
           preferred channel or use the form for a discreet response from our
           team.
@@ -22,7 +25,7 @@ const Contact = () => (
               <Phone className="text-brushed-gold w-6 h-6" />
               <a
                 href="tel:0501105765"
-                className="text-black hover:text-black text-description transition font-medium"
+                className="hover:text-black text-description transition font-medium"
               >
                 0501105765
               </a>
@@ -33,14 +36,14 @@ const Contact = () => (
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bekalholding.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-black hover:text-black text-description transition font-medium"
+                className=" hover:text-black text-description transition font-medium"
               >
                 info@bekalholding.com
               </a>
             </div>
             <div className="flex items-center gap-4">
               <MapPin className="text-brushed-gold w-6 h-6" />
-              <span className="text-black leading-tight text-description">
+              <span className="leading-tight text-description">
                 UAE, Saudi Arabia, India
               </span>
             </div>
@@ -54,14 +57,14 @@ const Contact = () => (
             >
               <Linkedin className="text-brushed-gold w-6 h-6" />
             </a>
-            {/* <a
-              href="https://www.instagram.com"
+            <a
+              href="https://www.linkedin.com/in/shahal-bekal-holding"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-12 h-12 rounded-full bg-off-white/80 border border-[#e4dcc9] shadow-sm hover:bg-[#f6ecd1] transition"
+              className="flex items-center justify-center w-12 h-12 rounded-full bg-white/50 border border-black shadow-sm hover:bg-off-white transition"
             >
-              <Instagram className="text-[#bfa450] w-6 h-6" />
-            </a> */}
+              <Instagram className="text-brushed-gold w-6 h-6" />
+            </a>
           </div>
         </div>
         {/* Luxury Minimal Contact Form */}
@@ -70,22 +73,22 @@ const Contact = () => (
             <input
               type="text"
               placeholder="Your Name"
-              className="w-full px-5 py-4 bg-brushed-gold/30 rounded-lg border border-off-white focus:outline-none focus:ring-1 focus:ring-blacktext-description placeholder-dark-gray/50 transition text-black"
+              className="w-full px-5 py-4 bg-brushed-gold/30 inputbox rounded-lg border border-off-white focus:outline-none focus:ring-1 focus:ring-blacktext-description placeholder-dark-gray/50 transition text-black"
             />
             <input
               type="email"
               placeholder="Your Email"
-              className="w-full px-5 py-4 bg-brushed-gold/30 rounded-lg border border-off-white focus:outline-none focus:ring-1 focus:ring-blacktext-description placeholder-dark-gray/50 text-black transition"
+              className="w-full px-5 py-4 bg-brushed-gold/30 inputbox rounded-lg border border-off-white focus:outline-none focus:ring-1 focus:ring-blacktext-description placeholder-dark-gray/50 text-black transition"
             />
             <input
               type="text"
               placeholder="Subject"
-              className="w-full px-5 py-4 bg-brushed-gold/30 rounded-lg border border-off-white focus:outline-none focus:ring-1 focus:ring-blacktext-description placeholder-dark-gray/50 text-black transition"
+              className="w-full px-5 py-4 bg-brushed-gold/30 inputbox rounded-lg border border-off-white focus:outline-none focus:ring-1 focus:ring-blacktext-description placeholder-dark-gray/50 text-black transition"
             />
             <textarea
               placeholder="Your Message"
               rows={5}
-              className="w-full px-5 py-4 bg-brushed-gold/30 rounded-lg border border-off-white focus:outline-none focus:ring-1 focus:ring-blacktext-description placeholder-dark-gray/50 text-black transition resize-none"
+              className="w-full px-5 py-4 bg-brushed-gold/30 inputbox rounded-lg border border-off-white focus:outline-none focus:ring-1 focus:ring-blacktext-description placeholder-dark-gray/50 text-black transition resize-none"
             ></textarea>
             <button
               type="submit"
@@ -96,7 +99,7 @@ const Contact = () => (
           </form>
         </div>
       </div>
-      <div className="w-24 h-1 bg-gradient-to-r from-primary-orange/80 to-primary-orange mx-auto mt-20 rounded-full" />
+      {/* <div className="w-24 h-1 bg-gradient-to-r from-primary-orange/80 to-primary-orange mx-auto mt-20 rounded-full" /> */}
     </div>
   </section>
 );

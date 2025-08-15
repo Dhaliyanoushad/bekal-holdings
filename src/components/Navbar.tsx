@@ -50,7 +50,7 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
       className={`fixed w-full top-0 z-50 h-20 transition-colors duration-300 ${
         isScrolled || isMenuOpen
-          ? "bg-black"
+          ? "bg-white"
           : "bg-gradient-to-b from-black/80 to-transparent"
       }`}
     >
@@ -100,7 +100,10 @@ const Navbar = () => {
               key={link.label}
               href={link.href}
               onClick={(e) => handleSmoothScroll(e, link.href)}
-              className="relative px-1 py-1 text-off-white hover:text-primary-orange text-sm font-medium transition-colors duration-200"
+              // className="relative px-1 py-1 text-black hover:text-primary-orange text-sm font-medium transition-colors duration-200"
+              className={`relative px-1 py-1 text-black hover:text-primary-orange text-sm font-medium transition-colors duration-200 ${
+                isScrolled || isMenuOpen ? "text-black" : "text-white"
+              }`}
             >
               {link.label}
             </a>

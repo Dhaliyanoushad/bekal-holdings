@@ -28,14 +28,14 @@ const ValueCard = ({
   title: string;
   desc: string;
 }) => (
-  <div className="bg-off-white text-black p-8 shadow-sm hover:shadow-md transition text-center flex flex-col items-center color-change">
+  <div className="bg-off-white text-black p-8 shadow-sm hover:shadow-md transition text-center flex flex-col items-center ">
     <div className="bg-white w-14 h-14 flex items-center justify-center rounded-full border-2 border-primary-orange text-primary-orange text-xl font-bold mb-4">
       {number}
     </div>
     <h4 className="font-semibold mb-2 text-base sm:text-lg lg:text-xl">
       {title}
     </h4>
-    <p className="text-black/80 graytext text-sm lg:text-base">{desc}</p>
+    <p className="text-black/80 text-sm lg:text-base">{desc}</p>
   </div>
 );
 
@@ -46,11 +46,9 @@ const InfoPanel = ({
   heading: string;
   children: React.ReactNode;
 }) => (
-  <div className="bg-off-white p-8 sm:p-10 shadow-sm hover:shadow-md transition text-black color-change">
+  <div className="bg-off-white p-8 sm:p-10 shadow-sm hover:shadow-md transition text-black ">
     <h3 className="font-semibold text-lg sm:text-xl mb-4">{heading}</h3>
-    <p className="text-black/80 graytext leading-relaxed text-base">
-      {children}
-    </p>
+    <p className="text-black/80 leading-relaxed text-base">{children}</p>
   </div>
 );
 

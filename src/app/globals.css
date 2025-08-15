@@ -61,5 +61,5 @@ body {
 
 .color-change,
 body {
-  transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out;
+  transition: background-color 1s ease-in-out, color 0.6s ease-in-out;
 }

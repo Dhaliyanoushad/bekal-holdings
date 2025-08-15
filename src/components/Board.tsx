@@ -121,11 +121,11 @@ const Board = () => {
   return (
     <section
       id="board"
-      className="py-14 md:py-20 bg-white scroll-mt-20 color-change"
+      className="py-14 md:py-20 bg-white scroll-mt-20 color-change text-black"
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-8">
         <div className="text-center mb-14">
-          <h2 className="text-heading-sm sm:text-heading font-bold text-black mb-2 tracking-tight">
+          <h2 className="text-heading-sm sm:text-heading font-bold mb-2 tracking-tight">
             Board of Directors
           </h2>
           <div className="w-20 h-1 bg-primary-orange mx-auto mb-8 rounded-full" />

@@ -4,7 +4,7 @@ import Values from "@/components/Values";
 import Board from "@/components/Board";
 import Contact from "@/components/Contact";
 import Careers from "@/components/Careers";
-import Footer from "@/components/Footer";
+import Footer from "@/components/FooterW";
 import HeroCarousel from "@/components/HeroCarousel";
 import Commitment from "@/components/Commitment";
 import AboutUs from "@/components/AboutUs";

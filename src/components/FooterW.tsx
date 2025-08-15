@@ -1,15 +1,15 @@
 import { Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => (
-  <footer className="bg-black pt-32 pb-20 border-off-white/60 border-t-[1px]">
+  <footer className="bg-off-white pt-32 pb-20 border-off-white/60 border-t-[1px] text-black">
     <div className="max-w-7xl mx-auto px-4 sm:px-8">
       <div className="flex flex-col md:flex-row md:justify-between gap-12 md:gap-0">
         {/* Brand and Social */}
         <div className="flex-1 min-w-[200px] md:pr-16">
-          <h3 className="text-subheading font-bold mb-5 tracking-wide text-off-white">
+          <h3 className="text-subheading font-bold mb-5 tracking-wide ">
             Bekal International Holding
           </h3>
-          <p className="mb-6 text-off-white/60 font-medium leading-relaxed text-description">
+          <p className="mb-6 text-off-black/60 font-medium leading-relaxed text-description">
             A leading diversified business group with operations across Kingdom
             of Saudi Arabia, United Arab Emirates, and India since 1981.
           </p>
@@ -34,14 +34,14 @@ const Footer = () => (
         </div>
         {/* Quick Links */}
         <div className="flex-1 min-w-[140px]">
-          <div className="mb-4 text-description font-semibold tracking-wider text-off-white">
+          <div className="mb-4 text-description font-semibold tracking-wider text-black">
             Quick Links
           </div>
           <ul className="space-y-2 font-medium">
             <li>
               <a
                 href="#home"
-                className="text-off-white/60 hover:text-off-white transition"
+                className="hover:text-black text-black/60  transition"
               >
                 Home
               </a>
@@ -49,7 +49,7 @@ const Footer = () => (
             <li>
               <a
                 href="#about"
-                className="text-off-white/60 hover:text-off-white transition"
+                className="hover:text-black text-black/60  transition"
               >
                 About Us
               </a>
@@ -57,7 +57,7 @@ const Footer = () => (
             <li>
               <a
                 href="#companies"
-                className="text-off-white/60 hover:text-off-white transition"
+                className="hover:text-black text-black/60  transition"
               >
                 Our Companies
               </a>
@@ -65,7 +65,7 @@ const Footer = () => (
             <li>
               <a
                 href="#values"
-                className="text-off-white/60 hover:text-off-white transition"
+                className="hover:text-black text-black/60  transition"
               >
                 Core Values
               </a>
@@ -74,14 +74,14 @@ const Footer = () => (
         </div>
         {/* Companies */}
         <div className="flex-1 min-w-[160px]">
-          <div className="mb-4 text-description font-semibold tracking-wider text-off-white">
+          <div className="mb-4 text-description font-semibold tracking-wider text-black">
             Our Companies
           </div>
           <ul className="space-y-2 font-medium">
             <li>
               <a
                 href="#companies"
-                className="text-off-white/60 hover:text-off-white transition"
+                className="hover:text-black text-black/60  transition"
               >
                 Bekal Restaurant
               </a>
@@ -89,7 +89,7 @@ const Footer = () => (
             <li>
               <a
                 href="#companies"
-                className="text-off-white/60 hover:text-off-white transition"
+                className="hover:text-black text-black/60  transition"
               >
                 Bekal Events & Catering
               </a>
@@ -97,7 +97,7 @@ const Footer = () => (
             <li>
               <a
                 href="#companies"
-                className="text-off-white/60 hover:text-off-white transition"
+                className="hover:text-black text-black/60  transition"
               >
                 Bekal Baker's
               </a>
@@ -105,7 +105,7 @@ const Footer = () => (
             <li>
               <a
                 href="#companies"
-                className="text-off-white/60 hover:text-off-white transition"
+                className="hover:text-black text-black/60  transition"
               >
                 Bekal Constructions
               </a>
@@ -114,17 +114,17 @@ const Footer = () => (
         </div>
         {/* Contact */}
         <div className="flex-1 min-w-[180px]">
-          <div className="mb-4 text-description font-semibold tracking-wider text-off-white">
+          <div className="mb-4 text-description font-semibold tracking-wider text-black">
             Contact
           </div>
-          <ul className="space-y-4 text-off-white/80 text-description">
-            <li className="flex items-center gap-2 hover:text-off-white transition">
+          <ul className="space-y-4 text-black/80 text-description">
+            <li className="flex items-center gap-2 hover:text-black text-black/60 transition">
               <Phone size={17} className="text-brushed-gold" />
               <a href="tel:0501105765" className="tracking-wide">
                 0501105765
               </a>
             </li>
-            <li className="flex items-center gap-2 hover:text-off-white transition">
+            <li className="flex items-center gap-2 hover:text-black text-black/60 transition">
               <Mail size={17} className="text-brushed-gold" />
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bekalholding.com"
@@ -143,14 +143,14 @@ const Footer = () => (
         </div>
       </div>
       <div className="border-t border-black mt-14 pt-8 text-center">
-        <p className="text-off-white/80 text-body">
+        <p className="text-black/80 text-body">
           &copy; {new Date().getFullYear()} Bekal International Holding. All
           rights reserved.
         </p>
-        <p className="text-description text-off-white/80 mt-1">
+        <p className="text-description text-black/80 mt-1">
           <a
             href="https://www.bekalholding.com"
-            className="hover:text-off-white transition"
+            className="hover:text-black text-black/60 transition"
             target="_blank"
           >
             www.bekalholding.com
